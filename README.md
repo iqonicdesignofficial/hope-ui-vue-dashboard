@@ -289,7 +289,7 @@ github/hope-ui-admin-dashboard/
 - [Subscribe on Youtube](https://www.youtube.com/c/IqonicDesign)
 - [Reach US](https://iqonic.design/contact-us/)
 ## Reporting Issues
-Have a bug or a feature request? Raise a new issue at our [github](https://github.com/iqonicdesignofficial/hope-ui-design-system/issues) support
+Have a bug or a feature request? Raise a new issue at our [github](https://github.com/iqonicdesignofficial/hope-ui-vue-dashboard/issues) support
 
 ## Special Thanks
 - [Bootstrap](https://getbootstrap.com/)
