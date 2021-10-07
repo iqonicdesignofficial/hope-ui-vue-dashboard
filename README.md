@@ -5,14 +5,14 @@
   </a>
 </p>
 <p align="center">
-<a href="https://github.com/iqonicdesignofficial/hope-ui-design-system/" target="__blank"><img src="https://img.shields.io/github/stars/iqonicdesignofficial/hope-ui-design-system" /> </a>
-<a href="https://github.com/iqonicdesignofficial/hope-ui-design-system/network" target="__blank"><img src="https://img.shields.io/github/forks/iqonicdesignofficial/hope-ui-design-system" /> </a>
-<a href="https://github.com/iqonicdesignofficial/hope-ui-design-system/issues" target="__blank"><img src="https://img.shields.io/github/issues/iqonicdesignofficial/hope-ui-design-system" /> </a>
+<a href="https://github.com/iqonicdesignofficial/hope-ui-vue-dashboard/" target="__blank"><img src="https://img.shields.io/github/stars/iqonicdesignofficial/hope-ui-vue-dashboard" /> </a>
+<a href="https://github.com/iqonicdesignofficial/hope-ui-vue-dashboard/network" target="__blank"><img src="https://img.shields.io/github/forks/iqonicdesignofficial/hope-ui-vue-dashboard" /> </a>
+<a href="https://github.com/iqonicdesignofficial/hope-ui-vue-dashboard/issues" target="__blank"><img src="https://img.shields.io/github/issues/iqonicdesignofficial/hope-ui-vue-dashboard" /> </a>
 <a href="#" target="__blank"><img src="https://img.shields.io/bower/v/editor.md.svg" /> </a>
-<a href="https://github.com/iqonicdesignofficial/hope-ui-design-system/blob/main/LICENSE" target="__blank"><img src="https://img.shields.io/github/license/iqonicdesignofficial/hope-ui-design-system" /> </a>
+<a href="https://github.com/iqonicdesignofficial/hope-ui-vue-dashboard/blob/main/LICENSE" target="__blank"><img src="https://img.shields.io/github/license/iqonicdesignofficial/hope-ui-vue-dashboard" /> </a>
 <a href="https://twitter.com/iqonicdesign" target="__blank"><img src="https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2Fiqonicdesign" /></a>
 </p>
-<h3 align="center">Free Open Source Bootstrap 5 Vue Admin Dashboard.</h3>
+<h3 align="center">Free Open Source Bootstrap 5 Design System.</h3>
 <p align="center">
   <a href="https://templates.iqonic.design/hope-ui/html/dist" title="Hope UI"><strong>Live Demo</strong></a>
   <span>|</span>
@@ -71,7 +71,7 @@ Built ideally for developers, designers, and startups, or Creators, Hope UI brin
 
   - [Quick Start](#quick-start)
     - [Method 1: Direct Download](#method-1-direct-download)
-    - [Method 3: Using NPM](#method-2-using-npm)
+    - [Method 2: Using NPM](#method-2-using-npm)
   - [Documentation](#documentation)
   - [Version](#version)
   - [Public RoadMap](#public-roadmap)
@@ -90,7 +90,7 @@ Built ideally for developers, designers, and startups, or Creators, Hope UI brin
 You can use following method to get started with CSS and JS files of the design system.
 
 ### Method 1: Direct Download
-[Dowload from Github](https://github.com/tafcoder/sleek-dashboard/archive/refs/heads/master.zip)
+[Dowload from Github](https://github.com/iqonicdesignofficial/hope-ui-vue-dashboard/archive/refs/heads/main.zip)
 
 [Download from Iqonic Design](https://iqonic.design/product/admin-templates/hope-ui-admin-free-open-source-bootstrap-admin-template/?utm_source=github&utm_medium=github-description&utm_campaign=open_source_github)
 ### Method 2: Using NPM
@@ -123,6 +123,7 @@ You can find our documentation [here](https://templates.iqonic.design/hope-ui/do
 Checkout our public roadmap of Hope UI and also submit features requests [here](https://iqonic.design/hopeui-roadmap/).
 ## File Structure
 Within the download you'll find the following directories and files, logically grouping common assets and providing both compiled and minified variations. You'll see something like this:
+
 ```
 github/hope-ui-admin-dashboard/
 
@@ -207,8 +208,11 @@ github/hope-ui-admin-dashboard/
     │    |    ├── tab
     │    |    ├── toasts
     │    |    ├── tooltip
-    │    |    └── Typographys
-    |    └── custom
+    │    |    └──Typographys
+    │    |    
+    │    |    
+    |    │     
+    |    ├── custom
     |         ├── charts
     |         ├── leaflet
     |         ├── loader
@@ -300,9 +304,7 @@ Have a bug or a feature request? Raise a new issue at our [github](https://githu
 
 ## Change Log
 [Click Here](https://templates.iqonic.design/hope-ui/documentation/html/dist/main/change-log.html) to check our full change log.
-
 ## Follow Us
-
 - [Twitter](https://twitter.com/iqonicdesign)
 - [Facebook](https://www.facebook.com/iqonicdesign/)
 - [Dribbble](https://dribbble.com/IqonicDesign)
