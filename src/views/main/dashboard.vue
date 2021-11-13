@@ -562,7 +562,7 @@
             </div>
          </div>
       </div>
-</div>
+   </div>
 </template>
 <script>
 import iqCard from '@/components/bootstrap/Cards/iq-card.vue'
@@ -581,18 +581,6 @@ export default {
     Swiper,
     Vue3autocounter,
     SwiperSlide
-  },
-  mounted () {
-    if (typeof AOS !== typeof undefined) {
-      AOS.init({
-        disable: function () {
-          var maxWidth = 996
-          return window.innerWidth < maxWidth
-        },
-        once: true,
-        duration: 800
-      })
-    }
   },
   data () {
     return {
@@ -615,7 +603,7 @@ export default {
             enabled: false
           }
         },
-        colors: ['#3a57e8', '#4bc7d2'],
+        colors: ['#3a57e8', '#079aa2'],
         dataLabels: {
           enabled: false
         },
@@ -796,6 +784,18 @@ export default {
         }
       }
 
+    }
+  },
+  mounted () {
+    if (typeof AOS !== typeof undefined) {
+      AOS.init({
+        disable: function () {
+          var maxWidth = 996
+          return window.innerWidth < maxWidth
+        },
+        once: true,
+        duration: 800
+      })
     }
   }
 }

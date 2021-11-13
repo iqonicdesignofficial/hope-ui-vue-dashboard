@@ -5,6 +5,9 @@ export default createStore({
     appName: 'Hope UI',
     settings: {
       scheme: 'light',
+      themeColor: 'theme-color-default',
+      themeprimarycolor: '#3a57e8',
+      themeinfocolor: '#079aa2',
       schemeDir: 'ltr',
       sidebarcolor: 'sidebar-white',
       sidebartype: { mini: '', hover: '', boxed: '' },
@@ -15,6 +18,9 @@ export default createStore({
   },
   getters: {
     scheme: state => { return state.settings.scheme },
+    themeColor: state => { return state.settings.themeColor },
+    themePrimaryColor: state => { return state.settings.themeprimarycolor },
+    themeinfoColor: state => { return state.settings.themeinfocolor },
     appName: state => { return state.appName },
     schemeDir: state => { return state.settings.schemeDir },
     sidebartypemini: state => { return state.settings.sidebartype.mini },
@@ -29,6 +35,15 @@ export default createStore({
     schemeModeCommit (state, payload) {
       sessionStorage.setItem('color-mode', payload)
       state.settings.scheme = payload
+    },
+    themecolorModeCommit (state, payload) {
+      console.log(payload)
+      sessionStorage.setItem('theme-mode', payload.p1)
+      sessionStorage.setItem('themeprimary-mode', payload.p2)
+      sessionStorage.setItem('colorcustomchart-mode', payload.p3)
+      state.settings.themeColor = payload.p1
+      state.settings.themeprimarycolor = payload.p2
+      state.settings.themeinfocolor = payload.p3
     },
     schemedirModeCommit (state, payload) {
       sessionStorage.setItem('dir-mode', payload)
@@ -74,6 +89,9 @@ export default createStore({
   actions: {
     schemeModeAction (context, payload) {
       context.commit('schemeModeCommit', payload)
+    },
+    themecolorModeAction (context, payload) {
+      context.commit('themecolorModeCommit', payload)
     },
     schemedirModeAction (context, payload) {
       context.commit('schemedirModeCommit', payload)

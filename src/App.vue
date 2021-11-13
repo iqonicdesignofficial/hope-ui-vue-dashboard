@@ -13,6 +13,7 @@ export default {
   @import "@/assets/scss/custom.scss";
   @import "@/assets/scss/dark.scss";
   @import "@/assets/scss/rtl.scss";
+  @import "@/assets/scss/customizer.scss";
   @import url("./plugins/aos/dist/aos.css");
   @import url("./plugins/Leaflet/leaflet.css");
   @import url("./assets/vendor/fullcalendar/core/main.css");

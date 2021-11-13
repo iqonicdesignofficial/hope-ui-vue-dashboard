@@ -1,17 +1,30 @@
 <template>
-  <div :id="element" :class="classname"></div>
+ <div :id="element" :class="classname"></div>
 </template>
 <script>
 import ApexCharts from 'apexcharts'
+import { mapGetters } from 'vuex'
 export default {
   name: 'ApexChart',
   props: ['element', 'chartOption', 'isLive', 'classname'],
+  computed: {
+    ...mapGetters({
+      statePrimaryColor: 'themePrimaryColor',
+      stateInfoColor: 'themeinfoColor'
+    })
+  },
   mounted () {
     const _this = this
     const selector = '#' + _this.element
     const chart = new ApexCharts(document.querySelector(selector), _this.chartOption)
     setTimeout(() => {
       chart.render()
+      document.addEventListener('ColorChange', (e) => {
+        const newOpt = { colors: [e.detail.detail1, e.detail.detail2] }
+        chart.updateOptions(newOpt)
+      })
+      const newOpt = { colors: [this.statePrimaryColor, this.stateInfoColor] }
+      chart.updateOptions(newOpt)
       if (_this.isLive) {
         setInterval(function () {
           _this.getNewSeries(_this.lastDate, {

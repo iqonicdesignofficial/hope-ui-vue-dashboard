@@ -31,7 +31,12 @@
                                 </div>
                                 <div class="card-profile-progress">
                                     <CircleProgress :value="80" color="primary" />
-                                    <img src="@/assets/images/avatars/01.png" class="img-fluid rounded-circle card-img" alt="image">
+                                    <img src="@/assets/images/avatars/01.png" alt="User-Profile" class="theme-color-default-img img-fluid rounded-circle card-img">
+                                    <img src="@/assets/images/avatars/avtar_1.png" alt="User-Profile" class="theme-color-purple-img img-fluid rounded-circle card-img">
+                                    <img src="@/assets/images/avatars/avtar_2.png" alt="User-Profile" class="theme-color-blue-img img-fluid rounded-circle card-img">
+                                    <img src="@/assets/images/avatars/avtar_4.png" alt="User-Profile" class="theme-color-green-img img-fluid rounded-circle card-img">
+                                    <img src="@/assets/images/avatars/avtar_5.png" alt="User-Profile" class="theme-color-yellow-img img-fluid rounded-circle card-img">
+                                    <img src="@/assets/images/avatars/avtar_3.png" alt="User-Profile" class="theme-color-pink-img img-fluid rounded-circle card-img">
                                 </div>
                                 <div class="mt-3 text-center text-black-50">
                                     <p>Slate helps you see how many more days you need</p>
@@ -381,7 +386,12 @@
                     <div class="card-body">
                         <div class="twit-feed">
                             <div class="d-flex align-items-center mb-4">
-                                <img class="rounded-pill img-fluid avatar-60 me-3" src="@/assets/images/avatars/01.png" alt="">
+                                <img src="@/assets/images/avatars/01.png" alt="User-Profile" class="theme-color-default-img rounded-pill img-fluid avatar-60 me-3">
+                                    <img src="@/assets/images/avatars/avtar_1.png" alt="User-Profile" class="theme-color-purple-img rounded-pill img-fluid avatar-60 me-3">
+                                    <img src="@/assets/images/avatars/avtar_2.png" alt="User-Profile" class="theme-color-blue-img rounded-pill img-fluid avatar-60 me-3">
+                                    <img src="@/assets/images/avatars/avtar_4.png" alt="User-Profile" class="theme-color-green-img rounded-pill img-fluid avatar-60 me-3">
+                                    <img src="@/assets/images/avatars/avtar_5.png" alt="User-Profile" class="theme-color-yellow-img rounded-pill img-fluid avatar-60 me-3">
+                                    <img src="@/assets/images/avatars/avtar_3.png" alt="User-Profile" class="theme-color-pink-img rounded-pill img-fluid avatar-60 me-3">
                                 <div class="media-support-info">
                                 <h6 class="mb-0">Anna Sthesia</h6>
                                 <p class="mb-0">@anna59

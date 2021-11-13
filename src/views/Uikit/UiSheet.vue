@@ -15,10 +15,14 @@
                 <h4 class="text-white mb-5">Production ready FREE Open Source <b>Dashboard UI Kit</b> and <b>Design System</b>.</h4>
                 <div class="d-flex justify-content-center align-items-center">
                 <div>
-                     <router-link target="_blank" class="btn btn-light bg-white"  :to="{name: 'default.dashboard'}">Dashboard Demo</router-link>
+                    <router-link target="_blank" class="btn btn-light bg-white"  :to="{name: 'default.dashboard'}">
+                    <svg width="22" height="22" class="me-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                    Dashboard Demo</router-link>
                 </div>
                 <div class="ms-3">
-                    <a class="btn btn-light bg-white" href="#components">UI KIT</a>
+                    <a class="bg-white btn btn-light d-flex " target="_blank" href="https://github.com/iqonicdesignofficial/hope-ui-vue-dashboard"><img class="avatar-23" src="@/assets/images/brands/23.png" width="24px" height="24px"><span class="mx-2 text-danger fw-bold">STAR US</span> <span>ON GITHUB</span></a>
                 </div>
             </div>
         </div>
@@ -42,6 +46,9 @@
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-start">
                             <li class="nav-item me-3">
                                 <a class="nav-link" aria-current="page" href="https://templates.iqonic.design/hope-ui/documentation/vue/dist/"  target="_blank">Documentation</a>
+                            </li>
+                            <li class="nav-item me-3">
+                                <a class="nav-link" aria-current="page" href="https://templates.iqonic.design/hope-ui/documentation/vue/dist/Changelog" target="_blank">Change Log</a>
                             </li>
                             <li class="nav-item">
                                 <a class="btn btn-success" aria-current="page" href="https://iqonic.design/product/admin-templates/hope-ui-admin-free-open-source-bootstrap-admin-template/" target="_blank">

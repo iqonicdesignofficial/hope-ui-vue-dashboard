@@ -1,0 +1,10 @@
+.text-primary{
+    color: var(--#{$variable-prefix}primary) !important;
+}
+.bg-primary{
+    background-color: var(--#{$variable-prefix}primary) !important;
+}
+.bg-soft-primary{
+    color: var(--#{$variable-prefix}primary-shade-10);
+    background-color: rgba(var(--bs-primary-rgb), .2) !important;
+}

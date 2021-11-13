@@ -1,6 +1,10 @@
 .avatar {
     position: relative;
 }
+.avatar-23{
+    height: 24px;
+    width: 24px;
+}
 @each $size,$value in $avatar-size {
     .avatar-#{$value}{@include avatar($value, $border-radius-sm)}
 }

@@ -5,11 +5,11 @@
   </a>
 </p>
 <p align="center">
-<a href="https://github.com/iqonicdesignofficial/hope-ui-vue-dashboard/" target="__blank"><img src="https://img.shields.io/github/stars/iqonicdesignofficial/hope-ui-vue-dashboard" /> </a>
-<a href="https://github.com/iqonicdesignofficial/hope-ui-vue-dashboard/network" target="__blank"><img src="https://img.shields.io/github/forks/iqonicdesignofficial/hope-ui-vue-dashboard" /> </a>
-<a href="https://github.com/iqonicdesignofficial/hope-ui-vue-dashboard/issues" target="__blank"><img src="https://img.shields.io/github/issues/iqonicdesignofficial/hope-ui-vue-dashboard" /> </a>
+<a href="https://github.com/iqonicdesignofficial/hope-ui-vue-dashboard/" target="__blank"><img src="https://img.shields.io/github/stars/iqonicdesignofficial/hope-ui-design-system" /> </a>
+<a href="https://github.com/iqonicdesignofficial/hope-ui-vue-dashboard/network" target="__blank"><img src="https://img.shields.io/github/forks/iqonicdesignofficial/hope-ui-design-system" /> </a>
+<a href="https://github.com/iqonicdesignofficial/hope-ui-vue-dashboard/issues" target="__blank"><img src="https://img.shields.io/github/issues/iqonicdesignofficial/hope-ui-design-system" /> </a>
 <a href="#" target="__blank"><img src="https://img.shields.io/bower/v/editor.md.svg" /> </a>
-<a href="https://github.com/iqonicdesignofficial/hope-ui-vue-dashboard/blob/main/LICENSE" target="__blank"><img src="https://img.shields.io/github/license/iqonicdesignofficial/hope-ui-vue-dashboard" /> </a>
+<a href="https://github.com/iqonicdesignofficial/hope-ui-vue-dashboard/blob/main/LICENSE" target="__blank"><img src="https://img.shields.io/github/license/iqonicdesignofficial/hope-ui-design-system" /> </a>
 <a href="https://twitter.com/iqonicdesign" target="__blank"><img src="https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2Fiqonicdesign" /></a>
 </p>
 <h3 align="center">Free Open Source Bootstrap 5 Design System.</h3>
@@ -123,7 +123,6 @@ You can find our documentation [here](https://templates.iqonic.design/hope-ui/do
 Checkout our public roadmap of Hope UI and also submit features requests [here](https://iqonic.design/hopeui-roadmap/).
 ## File Structure
 Within the download you'll find the following directories and files, logically grouping common assets and providing both compiled and minified variations. You'll see something like this:
-
 ```
 github/hope-ui-admin-dashboard/
 
@@ -156,6 +155,11 @@ github/hope-ui-admin-dashboard/
     │        │     ├── kanban/
     │        │     ├── pricing/
     │        │     └── ui-kit/
+    │        ├── customizer
+    │        │     ├── components/
+    │        │     ├── layouts/
+    │        │     ├── menu-style/
+    │        │     └── utilities/
     │        ├── hope-ui-design-system
     │        │     ├── components/
     │        │     ├── helper/
@@ -181,6 +185,7 @@ github/hope-ui-admin-dashboard/
     │        │     └── _index.scss
     │        ├── rtl.scss
     │        ├── dark.scss
+    │        ├── customizer.scss
     │        ├── custom.scss
     │        └── hope-ui.scss
     ├── components
@@ -269,8 +274,7 @@ github/hope-ui-admin-dashboard/
     ├── package-lock.json
     ├── package.json
     ├── README.md
-    └── vue.config.js
-  ```
+``` └── vue.config.js
 
 ## Browser Support
 ![chrome](https://assets.iqonic.design/hope-ui/github/chrome.png)
@@ -293,7 +297,7 @@ github/hope-ui-admin-dashboard/
 - [Subscribe on Youtube](https://www.youtube.com/c/IqonicDesign)
 - [Reach US](https://iqonic.design/contact-us/)
 ## Reporting Issues
-Have a bug or a feature request? Raise a new issue at our [github](https://github.com/iqonicdesignofficial/hope-ui-vue-dashboard/issues) support
+Have a bug or a feature request? Raise a new issue at our [github](https://github.com/iqonicdesignofficial/hope-ui-design-system/issues) support
 
 ## Special Thanks
 - [Bootstrap](https://getbootstrap.com/)

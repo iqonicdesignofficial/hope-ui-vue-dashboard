@@ -1,0 +1,28 @@
+// scss-docs-start box-shadow-variables
+$box-shadow:                  0 .5rem 1rem rgba(darken($primary, 25%), .05) !default;
+$box-shadow-sm:               0 .125rem .25rem rgba(darken($primary, 25%), .1) !default;
+$box-shadow-lg:               0 10px 30px 0 rgba(darken($primary, 25%), .05)!default;
+$box-shadow-inset:            inset 0 4px 8px rgba($black, .16) !default;
+
+//Color Shadow
+$box-color-shadow:            0 .125rem .25rem !default;
+$box-color-shadow-hover:      0 .125rem .5rem !default;
+$box-color-shadow-tint:         .30!default;
+$box-color-shadow-shade:        .35!default;
+
+
+$custom-colors: (
+  // "theme-color-red": rgb(238, 14, 14),
+  // "theme-color-green": rgb(32, 207, 32),
+  // "theme-color-yellow": rgb(230, 230, 22),
+  // "theme-color-blue": rgb(40, 40, 236),
+  "theme-color-dark": $dark,
+  // "theme-color-purple": rgb(226, 45, 226),
+  // "theme-color-pink": $pink,
+  "theme-color-cyan": rgb(32, 243, 243),
+  "theme-color-blue":#00C3F9,
+  "theme-color-gray": #91969E,
+  "theme-color-red":#DB5363,
+  "theme-color-yellow":#EA6A12,
+  "theme-color-pink": #E586B3,
+) !default;

@@ -1,0 +1,18 @@
+//dual-horizontal
+.dual-horizontal{
+    background: var(--#{$variable-prefix}primary);
+}
+
+//boxed
+body{
+    .boxed{
+        background: var(--#{$variable-prefix}primary);
+    }
+}
+
+//boxed-fancy
+.boxed-fancy{
+    &::before{
+        background: var(--#{$variable-prefix}primary);
+    }
+}

@@ -7,7 +7,12 @@
                      <div class="d-flex flex-wrap align-items-center justify-content-between">
                         <div class="d-flex flex-wrap align-items-center">
                            <div class="profile-img position-relative me-3 mb-3 mb-lg-0 profile-logo">
-                              <img src="@/assets/images/avatars/01.png" class="img-fluid rounded-pill avatar-100" alt="profile-image">
+                              <img src="@/assets/images/avatars/01.png" alt="User-Profile" class="theme-color-default-img img-fluid rounded-pill avatar-100">
+                              <img src="@/assets/images/avatars/avtar_1.png" alt="User-Profile" class="theme-color-purple-img img-fluid rounded-pill avatar-100">
+                              <img src="@/assets/images/avatars/avtar_2.png" alt="User-Profile" class="theme-color-blue-img img-fluid rounded-pill avatar-100">
+                              <img src="@/assets/images/avatars/avtar_4.png" alt="User-Profile" class="theme-color-green-img img-fluid rounded-pill avatar-100">
+                              <img src="@/assets/images/avatars/avtar_5.png" alt="User-Profile" class="theme-color-yellow-img img-fluid rounded-pill avatar-100">
+                              <img src="@/assets/images/avatars/avtar_3.png" alt="User-Profile" class="theme-color-pink-img img-fluid rounded-pill avatar-100">
                            </div>
                            <div class="d-flex flex-wrap align-items-center mb-3 mb-sm-0">
                               <h4 class="me-2 h4">Austin Robertson</h4>
@@ -533,7 +538,12 @@
                      <div class="card-body">
                         <ul class="list-inline m-0 p-0">
                            <li class="d-flex mb-4 align-items-center">
-                              <img src="@/assets/images/avatars/01.png" alt="story-img" class="rounded-pill avatar-40">
+                              <img src="@/assets/images/avatars/01.png" alt="User-Profile" class="theme-color-default-img rounded-pill avatar-40">
+                              <img src="@/assets/images/avatars/avtar_1.png" alt="User-Profile" class="theme-color-purple-img rounded-pill avatar-40">
+                              <img src="@/assets/images/avatars/avtar_2.png" alt="User-Profile" class="theme-color-blue-img rounded-pill avatar-40">
+                              <img src="@/assets/images/avatars/avtar_4.png" alt="User-Profile" class="theme-color-green-img rounded-pill avatar-40">
+                              <img src="@/assets/images/avatars/avtar_5.png" alt="User-Profile" class="theme-color-yellow-img rounded-pill avatar-40">
+                              <img src="@/assets/images/avatars/avtar_3.png" alt="User-Profile" class="theme-color-pink-img rounded-pill avatar-40">
                               <div class="ms-3 flex-grow-1">
                                  <h6>Paul Molive</h6>
                                  <p class="mb-0">Web Designer</p>
@@ -673,7 +683,12 @@
                      <div class="card-body">
                         <div class="text-center">
                            <div class="user-profile">
-                              <img src="@/assets/images/avatars/01.png" alt="profile-img" class="rounded-pill avatar-130 img-fluid">
+                              <img src="@/assets/images/avatars/01.png" alt="User-Profile" class="theme-color-default-img rounded-pill avatar-130 img-fluid">
+                              <img src="@/assets/images/avatars/avtar_1.png" alt="User-Profile" class="theme-color-purple-img rounded-pill avatar-130 img-fluid">
+                              <img src="@/assets/images/avatars/avtar_2.png" alt="User-Profile" class="theme-color-blue-img rounded-pill avatar-130 img-fluid">
+                              <img src="@/assets/images/avatars/avtar_4.png" alt="User-Profile" class="theme-color-green-img rounded-pill avatar-130 img-fluid">
+                              <img src="@/assets/images/avatars/avtar_5.png" alt="User-Profile" class="theme-color-yellow-img rounded-pill avatar-130 img-fluid">
+                              <img src="@/assets/images/avatars/avtar_3.png" alt="User-Profile" class="theme-color-pink-img rounded-pill avatar-130 img-fluid">
                            </div>
                            <div class="mt-3">
                               <h3 class="d-inline-block">Austin Robertson</h3>

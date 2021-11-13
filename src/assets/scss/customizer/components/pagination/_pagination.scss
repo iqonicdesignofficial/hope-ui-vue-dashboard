@@ -1,0 +1,13 @@
+.page-item {
+    &.active{
+        .page-link{
+            color:var(--#{$variable-prefix}white);
+            background-color: var(--#{$variable-prefix}primary-shade-20);
+            border-color: var(--#{$variable-prefix}primary-shade-20);
+        }
+    }
+    .page-link{
+        border-color: var(--bs-primary-tint-80);
+        color: var(--bs-primary);
+    }
+}

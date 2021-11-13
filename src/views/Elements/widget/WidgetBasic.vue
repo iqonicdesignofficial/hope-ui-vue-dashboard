@@ -687,7 +687,12 @@
             <div class="card">
                <div class="card-body">
                   <div class="border-bottom text-center pb-3">
-                     <img src="@/assets/images/avatars/01.png" alt="profile" class="img-fluid avatar-80 mb-4">
+                     <img src="@/assets/images/avatars/01.png" alt="User-Profile" class="theme-color-default-img img-fluid avatar-80 mb-4">
+                  <img src="@/assets/images/avatars/avtar_1.png" alt="User-Profile" class="theme-color-purple-img img-fluid avatar-80 mb-4">
+                  <img src="@/assets/images/avatars/avtar_2.png" alt="User-Profile" class="theme-color-blue-img img-fluid avatar-80 mb-4">
+                  <img src="@/assets/images/avatars/avtar_4.png" alt="User-Profile" class="theme-color-green-img img-fluid avatar-80 mb-4">
+                  <img src="@/assets/images/avatars/avtar_5.png" alt="User-Profile" class="theme-color-yellow-img img-fluid avatar-80 mb-4">
+                  <img src="@/assets/images/avatars/avtar_3.png" alt="User-Profile" class="theme-color-pink-img img-fluid avatar-80 mb-4">
                      <div>
                         <h5 class="mb-3">Bini Jets</h5>
                      </div>
