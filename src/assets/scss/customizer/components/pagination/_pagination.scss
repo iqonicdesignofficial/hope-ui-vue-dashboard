@@ -2,8 +2,8 @@
     &.active{
         .page-link{
             color:var(--#{$variable-prefix}white);
-            background-color: var(--#{$variable-prefix}primary-shade-20);
-            border-color: var(--#{$variable-prefix}primary-shade-20);
+            background-color: var(--#{$variable-prefix}primary);
+            border-color: var(--#{$variable-prefix}primary);
         }
     }
     .page-link{

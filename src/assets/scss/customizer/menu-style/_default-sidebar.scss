@@ -10,6 +10,13 @@ $primary: var(--#{$variable-prefix}primary);
             color: $primary;
         }
     }
+    &.sidebar-color{
+        .navbar-brand{
+            svg{
+                color: $white;
+            }
+        }
+    }
 }
 
 
@@ -34,20 +41,20 @@ $primary: var(--#{$variable-prefix}primary);
 }
 
 .sidebar-color {
-    background-color: var(--bs-primary);
+    background-color: var(--bs-primary) !important;
     .navbar-nav{
          .nav-item{
               .nav-link:not(.disabled).active{
-                background-color: #fff;
-                color: var(--bs-primary);
+                background-color: $white;
+                color: var(--bs-primary) !important;
               }
               .nav-link:not(.disabled)[aria-expanded=true] {
-                background-color: #fff;
-                color: var(--bs-primary)
+                background-color: $white;
+                color: var(--bs-primary) !important
               }
               .nav-link:not(.disabled):hover:not(.active):not([aria-expanded=true]){
                 background-color: rgba(var(--#{$variable-prefix}white-rgb), .1);
-                color: #fff;
+                color: $white;
               }
 
             }
@@ -56,20 +63,3 @@ $primary: var(--#{$variable-prefix}primary);
             border-bottom-color: var(--bs-primary-tint-20)
         }
 }
-
-
-
-.sidebar-dark {
-    .navbar-nav {
-        .nav-item{
-             .nav-link:not(.disabled).active{
-                 background-color: var(--bs-primary);
-                 color: #fff;
-             }
-             .nav-link:not(.disabled):hover:not(.active):not([aria-expanded=true]){
-                // background-color: var(--bs-primary-tint-88);
-                color: #fff;
-             }
-            }
-        }
-    }

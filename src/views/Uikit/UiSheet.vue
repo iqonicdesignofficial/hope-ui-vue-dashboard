@@ -22,7 +22,7 @@
                     Dashboard Demo</router-link>
                 </div>
                 <div class="ms-3">
-                    <a class="bg-white btn btn-light d-flex " target="_blank" href="https://github.com/iqonicdesignofficial/hope-ui-vue-dashboard"><img class="avatar-23" src="@/assets/images/brands/23.png" width="24px" height="24px"><span class="mx-2 text-danger fw-bold">STAR US</span> <span>ON GITHUB</span></a>
+                    <a class="bg-white btn btn-light d-flex " target="_blank" href="https://github.com/iqonicdesignofficial/hope-ui-vue-dashboard"><img class="avatar-23" src="@/assets/images/brands/23.png"  style="width:24px; height:24px"><span class="mx-2 text-danger fw-bold">STAR US</span> <span>ON GITHUB</span></a>
                 </div>
             </div>
         </div>
@@ -51,7 +51,7 @@
                                 <a class="nav-link" aria-current="page" href="https://templates.iqonic.design/hope-ui/documentation/vue/dist/Changelog" target="_blank">Change Log</a>
                             </li>
                             <li class="nav-item">
-                                <a class="btn btn-success" aria-current="page" href="https://iqonic.design/product/admin-templates/hope-ui-admin-free-open-source-bootstrap-admin-template/" target="_blank">
+                                <a class="btn btn-success" aria-current="page" href="https://iqonic.design/product/admin-templates/hope-ui-open-source-vue-js-admin-template/" target="_blank">
                                     <svg width="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path opacity="0.4" fill-rule="evenodd" clip-rule="evenodd" d="M5.91064 20.5886C5.91064 19.7486 6.59064 19.0686 7.43064 19.0686C8.26064 19.0686 8.94064 19.7486 8.94064 20.5886C8.94064 21.4186 8.26064 22.0986 7.43064 22.0986C6.59064 22.0986 5.91064 21.4186 5.91064 20.5886ZM17.1606 20.5886C17.1606 19.7486 17.8406 19.0686 18.6806 19.0686C19.5106 19.0686 20.1906 19.7486 20.1906 20.5886C20.1906 21.4186 19.5106 22.0986 18.6806 22.0986C17.8406 22.0986 17.1606 21.4186 17.1606 20.5886Z" fill="currentColor"></path>
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M20.1907 6.34909C20.8007 6.34909 21.2007 6.55909 21.6007 7.01909C22.0007 7.47909 22.0707 8.13909 21.9807 8.73809L21.0307 15.2981C20.8507 16.5591 19.7707 17.4881 18.5007 17.4881H7.59074C6.26074 17.4881 5.16074 16.4681 5.05074 15.1491L4.13074 4.24809L2.62074 3.98809C2.22074 3.91809 1.94074 3.52809 2.01074 3.12809C2.08074 2.71809 2.47074 2.44809 2.88074 2.50809L5.26574 2.86809C5.60574 2.92909 5.85574 3.20809 5.88574 3.54809L6.07574 5.78809C6.10574 6.10909 6.36574 6.34909 6.68574 6.34909H20.1907ZM14.1307 11.5481H16.9007C17.3207 11.5481 17.6507 11.2081 17.6507 10.7981C17.6507 10.3781 17.3207 10.0481 16.9007 10.0481H14.1307C13.7107 10.0481 13.3807 10.3781 13.3807 10.7981C13.3807 11.2081 13.7107 11.5481 14.1307 11.5481Z" fill="currentColor"></path>
@@ -66,15 +66,22 @@
              </div>
         </div>
         <div class=" body-class-1 container">
-            <aside class="mobile-offcanvas bd-aside card iq-document-card sticky-xl-top text-muted align-self-start mb-5 mt-n5" id="left-side-bar">
+            <aside :class="show?'mobile-offcanvas bd-aside card iq-document-card sticky-xl-top text-muted align-self-start mb-5 mt-n5 show':'mobile-offcanvas bd-aside card iq-document-card sticky-xl-top text-muted align-self-start mb-5 mt-n5'" id="left-side-bar">
                 <div class="offcanvas-header p-0">
-                    <button class="btn-close float-end"></button>
+                    <button @click="show=false" class="btn-close float-end"></button>
                 </div>
                 <h2 class="h6 pb-2 border-bottom">On this page</h2>
                 <nav className="small" id="elements-section">
                     <ul class="list-unstyled mb-0">
                         <li class="mt-2">
-                            <button class="btn d-inline-flex align-items-center collapsed" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#components-collapse" aria-controls="components-collapse">Components</button>
+                            <button class="btn d-inline-flex align-items-center collapsed" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#components-collapse" aria-controls="components-collapse">
+                                <i class="right-icon me-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                    </svg>
+                                </i>
+                                Components
+                            </button>
                             <ul className="list-unstyled ps-3 collapse show" id="components-collapse" style="">
                                 <li><a class="nav-link d-inline-flex align-items-center rounded"  href="#accordion">Accordion</a></li>
                                 <li><a class="nav-link d-inline-flex align-items-center rounded" href="#alerts">Alerts</a></li>
@@ -101,7 +108,14 @@
                             </ul>
                         </li>
                         <li class="my-2">
-                            <button class="btn d-inline-flex align-items-center collapsed" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#forms-collapse" aria-controls="forms-collapse">Forms</button>
+                            <button class="btn d-inline-flex align-items-center collapsed" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#forms-collapse" aria-controls="forms-collapse">
+                                <i class="right-icon me-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                    </svg>
+                                </i>
+                                Forms
+                            </button>
                             <ul class="list-unstyled ps-3 collapse" id="forms-collapse" href="#forms" style="">
                                 <li><a class="nav-link d-inline-flex align-items-center rounded" href="#overview">Overview</a></li>
                                 <li><a class="nav-link d-inline-flex align-items-center rounded" href="#disabled-forms">Disabled Forms</a></li>
@@ -115,7 +129,14 @@
                             </ul>
                         </li>
                         <li class="mb-2">
-                            <button class="btn d-inline-flex align-items-center collapsed" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#contents-collapse" aria-controls="contents-collapse">Contents</button>
+                            <button class="btn d-inline-flex align-items-center collapsed" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#contents-collapse" aria-controls="contents-collapse">
+                               <i class="right-icon me-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                    </svg>
+                                </i>
+                             Contents
+                            </button>
                             <ul class="list-unstyled ps-3 collapse" id="contents-collapse" href="#content" style="">
                                 <li><a class="nav-link d-inline-flex align-items-center rounded" href="#typography">Typography</a></li>
                                 <li><a class="nav-link d-inline-flex align-items-center rounded" href="#images">Images</a></li>
@@ -6078,7 +6099,7 @@
         </a>
     </div>
     <div class="middle" style="display: none;">
-        <button data-trigger="left-side-bar" class="d-xl-none btn btn-xs mid-menu" type="button">
+        <button data-trigger="left-side-bar"  @click="show=true" class="d-xl-none btn btn-xs mid-menu" type="button">
             <i class="icon">
                 <svg width="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M19.75 11.7256L4.75 11.7256" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -6092,7 +6113,7 @@
 import TabNavItems from '../../components/bootstrap/tab/tab-nav-items.vue'
 import tabNav from '../../components/bootstrap/tab/tab-nav.vue'
 import Datepicker from 'vue3-datepicker'
-import SliderTab from '../../assets/js/slider-tabs.js'
+// import SliderTab from '../../assets/js/slider-tabs.js'
 import NoUiSlider from '../../components/custom/slider/NoUiSlider'
 import ScrollspyNav from '../../components/bootstrap/ScrollSpy/scrollspy-nav.vue'
 import ScrollspyNavitem from '../../components/bootstrap/ScrollSpy/scrollspy-navitem.vue'
@@ -6112,15 +6133,17 @@ export default {
   data () {
     return {
       picked: '',
-      slider: ''
+      slider: '',
+      show: false
     }
   },
   name: 'UiSheet',
   mounted () {
     prism()
-    Array.from(document.querySelectorAll('[data-toggle="slider-tab"]'), (elem) => {
-      this.slider = new SliderTab(elem)
-    })
+    // Array.from(document.querySelectorAll('[data-toggle="slider-tab"]'), (elem) => {
+    //   console.log('ui')
+    //   this.slider = new SliderTab(elem)
+    // })
   }
 }
 </script>

@@ -157,10 +157,16 @@ const defaultchildRoutes = (prop, mode = false) => [
     component: () => import('../views/pages/Special Pages/Pricing')
   },
   {
-    path: '/timeline',
+    path: 'timeline',
     name: prop + '.timeline',
     meta: { auth: true, name: 'TimeLine' },
     component: () => import('../views/pages/Special Pages/Timeline')
+  },
+  {
+    path: 'admin',
+    name: prop + '.admin',
+    meta: { auth: true, name: 'admin' },
+    component: () => import('../views/pages/admin')
   },
   // Widget pages
   {

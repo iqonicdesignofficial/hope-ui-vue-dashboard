@@ -10,19 +10,27 @@ $box-color-shadow-hover:      0 .125rem .5rem !default;
 $box-color-shadow-tint:         .30!default;
 $box-color-shadow-shade:        .35!default;
 
+$colors-name: ('primary', 'info') !default;
 
 $custom-colors: (
-  // "theme-color-red": rgb(238, 14, 14),
-  // "theme-color-green": rgb(32, 207, 32),
-  // "theme-color-yellow": rgb(230, 230, 22),
-  // "theme-color-blue": rgb(40, 40, 236),
-  "theme-color-dark": $dark,
-  // "theme-color-purple": rgb(226, 45, 226),
-  // "theme-color-pink": $pink,
-  "theme-color-cyan": rgb(32, 243, 243),
-  "theme-color-blue":#00C3F9,
-  "theme-color-gray": #91969E,
-  "theme-color-red":#DB5363,
-  "theme-color-yellow":#EA6A12,
-  "theme-color-pink": #E586B3,
+  "theme-color-blue": map-merge($colors,(
+    "primary": #00C3F9,
+    "info": #573BFF,
+  )),
+  "theme-color-gray": map-merge($colors,(
+    "primary": #91969E,
+    "info": #FD8D00,
+  )),
+  "theme-color-red": map-merge($colors,(
+    "primary": #DB5363,
+    "info": #366AF0,
+  )),
+  "theme-color-yellow": map-merge($colors,(
+    "primary": #EA6A12,
+    "info": #6410F1,
+  )),
+  "theme-color-pink": map-merge($colors,(
+    "primary": #E586B3,
+    "info": #25C799,
+  )),
 ) !default;

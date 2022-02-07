@@ -41,7 +41,7 @@
         }
         // #1743a4 6%, #2974e5
         &::before {
-            background: linear-gradient(225deg, var(--bs-primary) 6%, var(--bs-primary-tint-20) 56%);
+            background: linear-gradient(225deg, var(--bs-primary) 6%, var(--bs-primary) 56%);
             top: -45px;
             left: -3.125rem;
             box-shadow: 0px 10px 50px 10px rgba(153, 159, 172, 0.2);

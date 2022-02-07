@@ -1,82 +1,73 @@
-.btn{
-    font-size: var(--body-font-size);
-    &.btn-primary{
-        color: var(--#{$variable-prefix}white);
-        background-color: var(--#{$variable-prefix}primary);
-        border-color: var(--#{$variable-prefix}primary);
-        box-shadow: $btn-box-color-shadow rgba(var(--bs-primary-rgb), $box-color-shadow-tint);
-        
-        &:hover{
-            color:  var(--#{$variable-prefix}white);
-            background-color: var(--#{$variable-prefix}primary-shade-20);
-            border-color: var(--#{$variable-prefix}primary-shade-20);
-            box-shadow: $btn-box-color-shadow rgba(var(--bs-primary-rgb), $box-color-shadow-tint);
-        }
-        &:focus{
+@each $color in $colors-name {
+    .btn{
+        &.btn-#{$color}{
             color: var(--#{$variable-prefix}white);
-            background-color: var(--#{$variable-prefix}primary-shade-20);
-            border-color: var(--#{$variable-prefix}primary-shade-20);
+            background-color: var(--#{$variable-prefix}#{$color});
+            border-color: var(--#{$variable-prefix}#{$color});
+            
+            &:hover{
+                color:  var(--#{$variable-prefix}white);
+                background-color: var(--#{$variable-prefix}#{$color}-shade-20);
+                border-color: var(--#{$variable-prefix}#{$color}-shade-20);
+            }
+            &:focus{
+                color: var(--#{$variable-prefix}white);
+                background-color: var(--#{$variable-prefix}#{$color}-shade-20);
+                border-color: var(--#{$variable-prefix}#{$color}-shade-20);
+            }
+            &:active, &.active{
+                color: var(--#{$variable-prefix}white);
+                background-color: var(--#{$variable-prefix}#{$color}-shade-20);
+                border-color: var(--#{$variable-prefix}#{$color}-shade-20);
+            }
         }
-        &:active{
-            color: var(--#{$variable-prefix}white);
-            background-color: var(--#{$variable-prefix}primary-shade-20);
-            border-color: var(--#{$variable-prefix}primary-shade-20);
+        &.btn-outline-#{$color}{
+            color: var(--#{$variable-prefix}#{$color}-shade-20);
+            border-color: var(--#{$variable-prefix}#{$color}-shade-20);
+            &:hover{
+                color:  var(--#{$variable-prefix}white);
+                background-color: var(--#{$variable-prefix}#{$color});
+                border-color: var(--#{$variable-prefix}#{$color});
+            }
+            &:active, &.active{
+                color: var(--#{$variable-prefix}white);
+                background-color: var(--#{$variable-prefix}#{$color}-shade-20);
+                border-color: var(--#{$variable-prefix}#{$color}-shade-20);
+            }
         }
-    }
-    &.btn-outline-primary{
-        color: var(--#{$variable-prefix}primary-shade-20);
-        border-color: var(--#{$variable-prefix}primary-shade-20);
-        &:hover{
-            color:  var(--#{$variable-prefix}white);
-            background-color: var(--#{$variable-prefix}primary-shade-20);
-            border-color: var(--#{$variable-prefix}primary-shade-20);
-        }
-        &:active{
-            color: var(--#{$variable-prefix}white);
-            background-color: var(--#{$variable-prefix}primary-shade-20);
-            border-color: var(--#{$variable-prefix}primary-shade-20);
-        }
-    }
-    &.btn-soft-primary{
-        color: var(--#{$variable-prefix}primary-shade-60);
-        background-color: var(--#{$variable-prefix}primary-tint-80);
-        border-color: var(--#{$variable-prefix}primary-tint-80);
-        &:hover{
-            color: var(--#{$variable-prefix}primary-shade-80);
-            background-color: var(--#{$variable-prefix}primary-tint-60);
-            border-color: var(--#{$variable-prefix}primary-tint-60);
-        }
-        &:focus{
-            color: var(--#{$variable-prefix}primary-shade-40);
-            background-color: var(--#{$variable-prefix}primary-tint-80);
-            border-color: var(--#{$variable-prefix}primary-tint-80);
-        }
-        &:active{
-            color: var(--#{$variable-prefix}primary-shade-80);
-            background-color: var(--#{$variable-prefix}primary-tint-40);
-            border-color: var(--#{$variable-prefix}primary-tint-40);
+        &.btn-soft-#{$color}{
+            color: var(--#{$variable-prefix}#{$color});
+            background-color: rgba(var(--#{$variable-prefix}#{$color}-rgb), .1);
+            border-color: transparent;
+            &:hover, &:focus, &:active{
+                color: var(--#{$variable-prefix}#{$color}-tint-20);
+                background-color: rgba(var(--#{$variable-prefix}#{$color}-rgb), .2);
+                // border-color: rgba(var(--bs-primary-rgb), .2);
+                border-color: transparent;
+            }
         }
     }
 }
+
+
 .btn-link{
-    color:var(--bs-primary);
+    color:var(--#{$variable-prefix}primary);
 }
 .bd-aside{
     .active{
-        color: var(--bs-primary) !important;
-        background-color: var(--bs-primary-tint-88) !important;
+        color: var(--#{$variable-prefix}primary);
+        background-color: var(--#{$variable-prefix}primary-tint-88);
     }
     .btn:hover{
-        color: var(--bs-primary);
-        background-color: var(--bs-primary-tint-88);
+        color: var(--#{$variable-prefix}primary);
+        background-color: var(--#{$variable-prefix}primary-tint-88);
     }
     .btn:focus{
-        color: var(--bs-primary);
-        background-color: var(--bs-primary-tint-88);
-        box-shadow: 0 0 0 0.063rem rgba(var(--bs-primary-rgb),0.7);
+        color: var(--#{$variable-prefix}primary);
+        background-color: var(--#{$variable-prefix}primary-tint-88);
+        box-shadow: 0 0 0 0.063rem rgba(var(--#{$variable-prefix}primary-rgb),0.7);
     }
     a:hover{
-        background-color: var(--bs-primary-tint-88) ;
+        background-color: var(--#{$variable-prefix}primary-tint-88) ;
     }
-    }
-
+}

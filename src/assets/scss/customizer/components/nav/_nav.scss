@@ -8,8 +8,8 @@
     .nav-link{
         &.active{
             color:var(--#{$variable-prefix}white);
-            background-color: var(--#{$variable-prefix}primary-shade-20);
-            border-color: var(--#{$variable-prefix}primary-shade-20);
+            background-color: var(--#{$variable-prefix}primary);
+            border-color: var(--#{$variable-prefix}primary);
             box-shadow: 0 0.125rem 0.25rem rgba(var(--bs-primary-rgb), 0.3);
         }
     }

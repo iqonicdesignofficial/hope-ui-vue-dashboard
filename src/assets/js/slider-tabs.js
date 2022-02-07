@@ -21,6 +21,7 @@ class SliderTab {
     this.resetSlider()
     this.mouseOver()
     this.resize()
+    this.updateinrtl()
   }
 
   addListener () {
@@ -43,8 +44,10 @@ class SliderTab {
       if (this.option !== undefined && this.option.move !== undefined && this.option.move === 'hover') {
         this.updateSlide(item, items, index)
       } else {
-        this.element.querySelector('.nav-item:nth-child(' + index + ') .nav-link').onclick = () => {
-          this.updateSlide(item, items, index)
+        if (this.element.querySelector('.nav-item:nth-child(' + index + ') .nav-link')) {
+          this.element.querySelector('.nav-item:nth-child(' + index + ') .nav-link').onclick = () => {
+            this.updateSlide(item, items, index)
+          }
         }
       }
     }
@@ -71,7 +74,11 @@ class SliderTab {
       for (j; j <= items.indexOf(item); j++) {
         sum += this.element.querySelector('.nav-item:nth-child(' + j + ')').offsetWidth
       }
-      this.slider.style.transform = 'translate3d(' + sum + 'px, 0px, 0px)'
+      if (document.querySelector('html').getAttribute('dir') === 'rtl') {
+        this.slider.style.transform = 'translate3d(-' + sum + 'px, 0px, 0px)'
+      } else {
+        this.slider.style.transform = 'translate3d(' + sum + 'px, 0px, 0px)'
+      }
       this.element.querySelector('.nav-item:nth-child(' + index + ')').querySelector('.nav-link').classList.add('active')
       this.slider.style.width = this.element.querySelector('.nav-item:nth-child(' + index + ')').offsetWidth + 'px'
     }
@@ -97,7 +104,17 @@ class SliderTab {
       this.updateSlide(item, items, index)
     })
   }
+
+  updateinrtl () {
+    document.addEventListener('theme_scheme_direction', (e) => {
+      console.log(e)
+      const target = this.element.querySelector('.active')
+      const item = target.closest('.nav-item')
+      const items = Array.from(this.element.children)
+      const index = items.indexOf(item) + 1
+      this.updateSlide(item, items, index)
+    })
+  }
 }
 
 window.SliderTab = new SliderTab()
-export default SliderTab
