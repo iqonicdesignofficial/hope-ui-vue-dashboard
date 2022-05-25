@@ -1,0 +1,62 @@
+<template>
+  <div class="section-block">
+    <pre><code class="language-markup">&#x3C;div class=&#x22;bd-example&#x22;&#x3E;
+&#x3C;b-row class=&#x22;row-cols-1 row-cols-md-2 g-4&#x22;&#x3E;
+  &#x3C;b-col&#x3E;
+    &#x3C;b-card class=&#x22;mb-0&#x22; no-body&#x3E;
+      &#x3C;svg class=&#x22;bd-placeholder-img card-img-top&#x22; width=&#x22;100%&#x22; height=&#x22;180&#x22; xmlns=&#x22;http://www.w3.org/2000/svg&#x22; role=&#x22;img&#x22; aria-label=&#x22;Placeholder: Image cap&#x22; preserveAspectRatio=&#x22;xMidYMid slice&#x22; focusable=&#x22;false&#x22;&#x3E;
+        &#x3C;title&#x3E;Placeholder&#x3C;/title&#x3E;
+        &#x3C;rect width=&#x22;100%&#x22; height=&#x22;100%&#x22; fill=&#x22;#868e96&#x22;&#x3E;&#x3C;/rect&#x3E;
+        &#x3C;text x=&#x22;40%&#x22; y=&#x22;50%&#x22; fill=&#x22;#dee2e6&#x22; dy=&#x22;.3em&#x22;&#x3E;Image cap&#x3C;/text&#x3E;
+      &#x3C;/svg&#x3E;
+      &#x3C;b-card-body&#x3E;
+        &#x3C;b-card-title title-tag=&#x22;h5&#x22; class=&#x22;card-title&#x22;&#x3E;Card title&#x3C;/b-card-title&#x3E;
+        &#x3C;b-card-text&#x3E;Some quick example text to build on the card title and make up the bulk of the card&#x27;s content.&#x3C;/b-card-text&#x3E;
+        &#x3C;b-button href=&#x22;#&#x22; variant=&#x22;primary&#x22;&#x3E;Go somewhere&#x3C;/b-button&#x3E;
+      &#x3C;/b-card-body&#x3E;
+    &#x3C;/b-card&#x3E;
+  &#x3C;/b-col&#x3E;
+  &#x3C;b-col&#x3E;
+    &#x3C;b-card class=&#x22;mb-0 card&#x22; header=&#x22;Featured&#x22; title=&#x22;Card title&#x22; footer=&#x22;2 days ago&#x22; header-tag=&#x22;h4&#x22; title-tag=&#x22;h5&#x22; footer-text-variant=&#x22;text-muted&#x22;&#x3E;
+      &#x3C;b-card-text&#x3E;Some quick example text to build on the card title and make up the bulk of the card&#x27;s content.&#x3C;/b-card-text&#x3E;
+      &#x3C;b-button href=&#x22;#&#x22; variant=&#x22;primary&#x22;&#x3E;Go somewhere&#x3C;/b-button&#x3E;
+    &#x3C;/b-card&#x3E;
+  &#x3C;/b-col&#x3E;
+  &#x3C;b-col&#x3E;
+    &#x3C;b-card class=&#x22;mb-0&#x22; on-body title=&#x22;Card title&#x22; title-tag=&#x22;h5&#x22;&#x3E;
+      &#x3C;b-card-text&#x3E;Some quick example text to build on the card title and make up the bulk of the card&#x27;s content.&#x3C;/b-card-text&#x3E;
+      &#x3C;b-list-group flush&#x3E;
+        &#x3C;b-list-group-item&#x3E;An item&#x3C;/b-list-group-item&#x3E;
+        &#x3C;b-list-group-item&#x3E;A second item&#x3C;/b-list-group-item&#x3E;
+        &#x3C;b-list-group-item&#x3E;A third item&#x3C;/b-list-group-item&#x3E;
+      &#x3C;/b-list-group&#x3E;
+      &#x3C;b-card-body&#x3E;
+        &#x3C;a href=&#x22;#&#x22; class=&#x22;card-link&#x22;&#x3E;Card link&#x3C;/a&#x3E;
+        &#x3C;b-link href=&#x22;#&#x22; class=&#x22;card-link&#x22;&#x3E;Another link&#x3C;/b-link&#x3E;
+      &#x3C;/b-card-body&#x3E;
+    &#x3C;/b-card&#x3E;
+  &#x3C;/b-col&#x3E;
+  &#x3C;b-col&#x3E;
+    &#x3C;b-card class=&#x22;mb-0&#x22; no-body&#x3E;
+      &#x3C;b-row class=&#x22;g-0&#x22;&#x3E;
+        &#x3C;b-col md=&#x22;4&#x22;&#x3E;
+          &#x3C;svg class=&#x22;bd-placeholder-img rounded-start&#x22; width=&#x22;100%&#x22; height=&#x22;300&#x22; xmlns=&#x22;http://www.w3.org/2000/svg&#x22; role=&#x22;img&#x22; aria-label=&#x22;Placeholder: Image&#x22; preserveAspectRatio=&#x22;xMidYMid slice&#x22; focusable=&#x22;false&#x22;&#x3E;
+            &#x3C;title&#x3E;Placeholder&#x3C;/title&#x3E;
+            &#x3C;rect width=&#x22;100%&#x22; height=&#x22;100%&#x22; fill=&#x22;#868e96&#x22;&#x3E;&#x3C;/rect&#x3E;
+            &#x3C;text x=&#x22;30%&#x22; y=&#x22;50%&#x22; fill=&#x22;#dee2e6&#x22; dy=&#x22;.3em&#x22;&#x3E;Image&#x3C;/text&#x3E;
+          &#x3C;/svg&#x3E;
+        &#x3C;/b-col&#x3E;
+        &#x3C;b-col md=&#x22;8&#x22;&#x3E;
+          &#x3C;b-card-body&#x3E;
+            &#x3C;b-card-title title-tag=&#x22;h5&#x22;&#x3E;Card title&#x3C;/b-card-title&#x3E;
+            &#x3C;b-card-text&#x3E;This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.&#x3C;/b-card-text&#x3E;
+            &#x3C;b-card-text&#x3E;&#x3C;small class=&#x22;text-muted&#x22;&#x3E;Last updated 3 mins ago&#x3C;/small&#x3E;&#x3C;/b-card-text&#x3E;
+          &#x3C;/b-card-body&#x3E;
+        &#x3C;/b-col&#x3E;
+      &#x3C;/b-row&#x3E;
+    &#x3C;/b-card&#x3E;
+  &#x3C;/b-col&#x3E;
+&#x3C;/b-row&#x3E;
+&#x3C;/div&#x3E;</code></pre>
+  </div>
+</template>

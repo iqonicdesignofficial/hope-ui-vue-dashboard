@@ -1,2 +1,8 @@
-/src/assets/vendor/sortable/Sortable.min.js
 /src/plugins/aos/dist/aos.js
+/src/plugins/prism.mini.js
+/src/assets/js/fslightbox.js
+/src/assets/js/circle-progress.js
+/src/plugins/360productviewer.js
+/src/plugins/masonry/masonry.pkgd.min.js
+/src/assets/vendor/**/*.*
+/src/store/setting/state.js

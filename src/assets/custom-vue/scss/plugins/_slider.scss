@@ -1,0 +1,10 @@
+.slider-connect{
+    background: var(--#{$variable-prefix}primary) !important;
+}
+.slider-tooltip{
+    background: var(--#{$variable-prefix}primary) !important;
+    border-color: var(--#{$variable-prefix}primary) !important;
+}
+.slider-handle:focus{
+    box-shadow: unset !important;
+}

@@ -45,6 +45,38 @@
     padding-right: $spacer;
     padding-left: unset;
 }
+.sidebar-mini{
+    &.navs-rounded-all, &.navs-pill-all{
+        .navbar-nav .sub-nav .nav-item:not(.static-item){
+            padding-right: unset;
+        }
+    }
+}
+.sidebar-mini{
+    .sidebar-list{
+        .navbar-nav{
+            .nav-item{
+                .nav-link{
+                    &:not(.disabled){
+                        span{
+                            transform: translateX(100%) scale(0);
+                            opacity: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sidebar-mini{
+    .navbar-brand {
+        .logo-title {
+            transform: translateX(100%) scale(0);
+            opacity: 0;
+        }
+    }
+}
 .navs-rounded-all {
     .sidebar-body {
         padding-right: unset;

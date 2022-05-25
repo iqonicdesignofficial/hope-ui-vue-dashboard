@@ -1,4 +1,3 @@
-
 <p align="center">
   <a href="https://hopeui.iqonic.design/?utm_source=github&utm_medium=github-description&utm_campaign=open_source_github" target="__blank" title="Hope UI">
     <img src="https://assets.iqonic.design/hope-ui/github/logo.png" />
@@ -27,7 +26,7 @@
   <a href="https://iqonic.design/product/admin-templates/hope-ui-free-open-source-laravel-admin-panel/?utm_source=github&utm_medium=github-description&utm_campaign=open_source_github" title="Hope UI"><strong>Laravel Dashboard</strong></a>
 </p>
 
-------------
+---
 
 <a href="https://templates.iqonic.design/hope-ui/html/dist" target="__blank" title="Hope UI Dashboard">
   <img src="https://assets.iqonic.design/hope-ui/github/rtl-mode-min.png" alt="Hope UI Dashboard" />
@@ -44,12 +43,12 @@ Hope UI is packed with finely-crafted UI elements, multiple styles of Menu, a se
 Built ideally for developers, designers, and startups, or Creators, Hope UI brings design consistency and acts as a strong foundation to manage a successful web or app project.
 
 ### 5 Irresistible Reasons To Have Hope UI
+
 - Unlike any other Design System, Hope UI is fully responsive which facilitates business owners to view the admin panel right from their mobile screens without losing the resolution.
-- With the purpose of data presentation, this best free Bootstrap 5 design system comes with extensive elements and widgets to add texts and images. 
+- With the purpose of data presentation, this best free Bootstrap 5 design system comes with extensive elements and widgets to add texts and images.
 - Besides being super easy and rapidly adaptable features, Hope UI is the cost-effective way to control and overview web or app project performance with a pre-coded design system and examples.
 - Hope UI is a strongly built system, a layout that focuses on both the scalability and performance of the project.
 - Hope UI Packs 100+ Fully-Codes Elements and widgets backed with SCSS and Gulp to make the development easy and fast.
-
 
 ### Features
 
@@ -95,24 +94,33 @@ You can use following method to get started with CSS and JS files of the design 
 [Download from Iqonic Design](https://iqonic.design/product/admin-templates/hope-ui-admin-free-open-source-bootstrap-admin-template/?utm_source=github&utm_medium=github-description&utm_campaign=open_source_github)
 ### Method 2: Using NPM
 Start working with the design system
+
 1. Install Dependency
+
 ```
 npm install
 ```
 
-2. Run on development 
+2. Run on development
+
 ```
 npm run serve
 ```
+
 3. Build for production
+
 ```
 npm run build
 ```
+
 [More Details...](https://templates.iqonic.design/hope-ui/documentation/html/dist/main/gulp.html)
+
 ## Documentation
+
 You can find our documentation [here](https://templates.iqonic.design/hope-ui/documentation/html/dist/main/).
 
 ## Version
+
 - [Figma](https://www.figma.com/community/file/1009728454881721702)
 - [HTML Admin Dashboard](https://iqonic.design/product/admin-templates/hope-ui-admin-free-open-source-bootstrap-admin-template/?utm_source=github&utm_medium=github-description&utm_campaign=open_source_github)
 - [Vue JS Dashobard](https://iqonic.design/product/admin-templates/hope-ui-open-source-vue-js-admin-template/?utm_source=github&utm_medium=github-description&utm_campaign=open_source_github)
@@ -120,161 +128,87 @@ You can find our documentation [here](https://templates.iqonic.design/hope-ui/do
 - [Laravel Dashobard](https://iqonic.design/product/admin-templates/hope-ui-free-open-source-laravel-admin-panel/?utm_source=github&utm_medium=github-description&utm_campaign=open_source_github)
 
 ## Public RoadMap
+
 Checkout our public roadmap of Hope UI and also submit features requests [here](https://iqonic.design/hopeui-roadmap/).
+
 ## File Structure
+
 Within the download you'll find the following directories and files, logically grouping common assets and providing both compiled and minified variations. You'll see something like this:
+
 ```
 github/hope-ui-admin-dashboard/
 
-  src
-    ├── assets
-    │    ├── images
-    │    │    ├── icon.png
-    │    │    ├── favicon.ico
-    │    │    └── loader.gif
-    │    ├── js
-    │    │    ├── app.js
-    │    │    ├── calender.js
-    |    │    ├── circle-progress.js
-    |    │    ├── countdown.js
-    |    │    ├── form-wizard.js
-    |    │    ├── fslightbox.js
-    |    │    ├── kanban.js
-    |    │    ├── prism.mini.js
-    |    │    ├── setting.js
-    |    │    ├── slider-tabs.js
-    │    └── scss
-    │        ├── bootstrap/
-    │        │     ├── forms/
-    │        │     ├── helper/
-    │        │     ├── mixins/
-    │        │     ├── utilites/
-    │        │     └── vendor/
-    │        ├── custom
-    │        │     ├── auth/
-    │        │     ├── kanban/
-    │        │     ├── pricing/
-    │        │     └── ui-kit/
-    │        ├── customizer
-    │        │     ├── components/
-    │        │     ├── layouts/
-    │        │     ├── menu-style/
-    │        │     └── utilities/
-    │        ├── hope-ui-design-system
-    │        │     ├── components/
-    │        │     ├── helper/
-    │        │     ├── layout-style/
-    │        │     ├── pages/
-    │        │     ├── plugins/
-    │        │     ├── variables/
-    │        │     └── variables.scss
-    │        ├── dark
-    │        │     ├── components/
-    │        │     ├── helper/
-    │        │     ├── layout-style/
-    │        │     ├── pages/
-    │        │     ├── plugins/
-    │        │     ├── reboot/
-    │        │     ├── _dark.scss
-    │        │     └── _index.scss
-    │        ├── rtl
-    │        │     ├── components/
-    │        │     ├── pages/
-    │        │     ├── reboot/
-    │        │     ├── utilities/
-    │        │     └── _index.scss
-    │        ├── rtl.scss
-    │        ├── dark.scss
-    │        ├── customizer.scss
-    │        ├── custom.scss
-    │        └── hope-ui.scss
-    ├── components
-    |    ├── bootstrap
-    │    |    ├── Accordion
-    │    |    ├── Alert
-    │    |    ├── Badges
-    │    |    ├── Breadcrumb
-    │    |    ├── ButtonGroup
-    │    |    ├── Buttons
-    │    |    ├── Cards
-    │    |    ├── carousel
-    │    |    ├── dropdown
-    │    |    ├── Images
-    │    |    ├── ListGroup
-    │    |    ├── modal
-    │    |    ├── Navbar
-    │    |    ├── offcanvas
-    │    |    ├── pagination
-    │    |    ├── popover
-    │    |    ├── Progressbar
-    │    |    ├── ScrollSpy
-    │    |    ├── Sliders
-    │    |    ├── Spinners
-    │    |    ├── tab
-    │    |    ├── toasts
-    │    |    ├── tooltip
-    │    |    └──Typographys
-    │    |    
-    │    |    
-    |    │     
-    |    ├── custom
-    |         ├── charts
-    |         ├── leaflet
-    |         ├── loader
-    |         ├── Logo
-    |         ├── partials
-    |         ├── progressbar
-    |         └── slider
-    |        
-    ├── icondata
-    │    └── iconsolid.js   
-    |        
-    ├── layouts
-    │    ├── boxed-fancy        
-    │    ├── boxed        
-    │    ├── default        
-    │    ├── dual-compact        
-    │    ├── dual-horizontal        
-    │    ├── horizontal        
-    │    └── simple        
-    │
-    ├── plugins
-    │    ├── aos
-    │    ├── circleprogress
-    │    ├── countdown
-    │    ├── Leaflet
-    │    ├── global-components.js        
-    │    └── index.js
-    ├── router
-    │    └── index.js
-    ├── store
-    │    └── index.js
-    ├── views
-    │    ├── Elements
-    │    ├── main
-    │    │     └── dashboard.vue
-    │    ├── pages
-    │    │      ├── Authentication
-    │    │      ├── Special Pages
-    │    │      ├── Users
-    │    │      └── Utilities
-    │    └── Uikit        
-    │           └── UiSheet.vue
-    ├── App.vue
-    ├── main.js
-    ├── .browserslistrc
-    ├── .editorconfig
-    ├── .env
-    ├── .env.example
-    ├── .eslintignore
-    ├── .eslintrc.js
-    ├── .gitignore
-    ├── .htaccess
-    ├──  babel.config.js
-    ├── package-lock.json
-    ├── package.json
-    ├── README.md
-``` └── vue.config.js
+
+├── node_modules
+├── public
+│    ├── img
+│    ├── favicon.ico
+│    ├── index.html
+│    ├── robots.txt
+├── src
+|     ├── assets/
+|     │     ├── custom-vue/
+|     │     ├── images/
+|     │     ├── scss/
+|     │     ├── vendor/
+|     ├── components
+|     │     ├── auth/
+|     │     ├── bootstrap/
+|     │     ├── custom/
+|     │     ├── icons/
+|     │     ├── menu-style/
+|     │     ├── partials/
+|     │     ├── setting/
+|     │     └── widgets/
+|     ├── directives
+|     │     └── SliderTab.js
+|     ├── layouts
+|     │     ├── guest/
+|     │     ├── menu-styles/
+|     │     └── DefaultLAyout.vue
+|     ├── plugins
+|     │     └── all 3rd party plugins js
+|     ├── router
+|     │     └── index.js
+|     ├── store
+|     │     ├── setting/
+|     │     └── index.js
+|     ├── utilities
+|     │     ├── root-var.js
+|     │     ├── setting.js
+|     │     └── dom.js
+|     └── views
+|           ├── admin/
+|           ├── auth/
+|           ├── dashboard/
+|           ├── design-system/
+|           ├── errors/
+|           ├── extra/
+|           ├── forms/
+|           ├── icons/
+|           ├── maps/
+|           ├── special-pages/
+|           ├── tables/
+|           ├── users/
+|           ├── widgets/
+|           ├── App.vue
+|           ├── main.js
+|           └── registerServiceWorker.js
+├── .browserslistrc
+├── .editorconfig
+├── .env
+├── .env.example
+├── .eslintignore
+├── .eslintrc.js
+├── .gitignore
+├── .htaccess
+├── .prettierrc
+├── babel.config.js
+├── jsconfig.json
+├── package-lock.json
+├── package.json
+├── README.md
+└── vue.config.js
 
 ## Browser Support
 ![chrome](https://assets.iqonic.design/hope-ui/github/chrome.png)
@@ -316,3 +250,4 @@ Have a bug or a feature request? Raise a new issue at our [github](https://githu
 - [Product Hunt](https://www.producthunt.com/posts/iqonic-design)
 ## Licensing
 - Code and Documentation Copyright 2021 All Rights Reserved by [IQONIC](https://iqonic.design/?utm_source=github&utm_medium=github-description&utm_campaign=open_source_github) Design. Code released under the [MIT](https://iqonic.design/licenses/) License.
+```

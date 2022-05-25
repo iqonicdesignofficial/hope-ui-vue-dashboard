@@ -1,23 +1,51 @@
 <template>
-  <router-view/>
+  <router-view />
 </template>
 
 <script>
-import 'nouislider/dist/nouislider.css'
+import { onMounted, onUnmounted, computed } from 'vue'
+import { useStore } from 'vuex'
+import '@/plugins/styles'
 export default {
-  name: 'App'
+  name: 'App',
+  setup() {
+    const store = useStore()
+    store.dispatch('setting/setSetting')
+    const sidebarType = computed(() => store.getters['setting/sidebar_type'])
+    const resizePlugin = () => {
+      const sidebarResponsive = document.querySelector('[data-sidebar="responsive"]')
+      if (window.innerWidth < 1025) {
+        if (sidebarResponsive !== null) {
+          if (!sidebarResponsive.classList.contains('sidebar-mini')) {
+            sidebarResponsive.classList.add('on-resize')
+            store.dispatch('setting/sidebar_type', [...sidebarType, 'sidebar-mini'])
+          }
+        }
+      } else {
+        if (sidebarResponsive !== null) {
+          if (sidebarResponsive.classList.contains('sidebar-mini') && sidebarResponsive.classList.contains('on-resize')) {
+            sidebarResponsive.classList.remove('on-resize')
+            store.dispatch(
+              'setting/sidebar_type',
+              sidebarType.value.filter((item) => item !== 'sidebar-mini')
+            )
+          }
+        }
+      }
+    }
+    onMounted(() => {
+      window.addEventListener('resize', resizePlugin)
+      setTimeout(() => {
+        resizePlugin()
+      }, 200)
+    })
+    onUnmounted(() => {
+      window.removeEventListener('resize', resizePlugin)
+    })
+  }
 }
 </script>
+
 <style lang="scss">
-  @import "@/assets/scss/hope-ui.scss";
-  @import "@/assets/scss/custom.scss";
-  @import "@/assets/scss/dark.scss";
-  @import "@/assets/scss/rtl.scss";
-  @import "@/assets/scss/customizer.scss";
-  @import url("./plugins/aos/dist/aos.css");
-  @import url("./plugins/Leaflet/leaflet.css");
-  @import url("./assets/vendor/fullcalendar/core/main.css");
-  @import url("./assets/vendor/fullcalendar/daygrid/main.css");
-  @import url("./assets/vendor/fullcalendar/timegrid/main.css");
-  @import url("./assets/vendor/fullcalendar/list/main.css");
+@import '@/assets/custom-vue/scss/styles.scss';
 </style>
