@@ -584,7 +584,7 @@
                 <span class="text-danger">22 jan</span>
                 <p>60 Minutes</p>
               </div>
-              <b-button tag="button" class="outline-danger">
+              <b-button tag="button" variant="outline-danger">
                 <span class="btn-inner">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
@@ -1055,7 +1055,7 @@ export default {
         series: [
           {
             name: 'Desktops',
-            data: [5, 30, 6, 20, 5, 18, 10]
+            data: [5, 30, 6, 20, 5, 18]
           }
         ],
         options: {
@@ -1094,7 +1094,7 @@ export default {
         series: [
           {
             name: 'Desktops',
-            data: [5, 20, 4, 18, 3, 15, 10]
+            data: [5, 20, 4, 18, 3, 10]
           }
         ],
         options: {
@@ -1133,7 +1133,7 @@ export default {
         series: [
           {
             name: 'Desktops',
-            data: [5, 20, 6, 18, 5, 15, 4]
+            data: [5, 20, 6, 18, 15, 4]
           }
         ],
         options: {
@@ -1172,7 +1172,7 @@ export default {
         series: [
           {
             name: 'Desktops',
-            data: [5, 15, 3, 20, 5, 18, 13]
+            data: [5, 15, 3, 20, 18, 13]
           }
         ],
         options: {
@@ -1248,6 +1248,10 @@ export default {
           {
             name: 'Revenue',
             data: [76, 85, 101, 98, 87, 105]
+          },
+          {
+            name: 'Free Cash Flow',
+            data: [35, 41, 36, 26, 45, 48]
           }
         ],
         options: {
@@ -1284,7 +1288,7 @@ export default {
           },
           fill: {
             opacity: 1,
-            colors: ['#EA6A12', '#6410F1']
+            colors: ['#344ed1', '#b91d12', '#d48918']
           },
           tooltip: {
             y: {

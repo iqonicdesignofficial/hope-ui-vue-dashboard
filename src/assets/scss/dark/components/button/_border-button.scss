@@ -1,34 +1,16 @@
 .btn-border {
     border: $border-width * 2 solid $border-color;
-
     &:hover {
         border-color: lighten($border-color, 20%);
     }
-
     &.active {
-        border-color: var(--#{$variable-prefix}primary);
+        border-color: var(--bs-primary);
     }
 }
-
-aside.bd-aside {
-
-    .btn:hover,
-    .btn:focus,
-    .active,
-    a:hover {
-        color: $white;
-        background-color: $body-bg;
+.bd-aside{
+    .btn:hover, .btn:focus, .active, a:hover{
+        color: #fff;
+        background-color: #151824;
         box-shadow: unset;
-    }
-}
-
-.btn {
-    &.btn-soft-primary {
-
-        &:hover,
-        &:focus,
-        &:active {
-            border-color: rgba(var(--#{$variable-prefix}primary-rgb), .2) !important;
-        }
     }
 }

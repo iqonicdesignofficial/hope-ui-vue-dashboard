@@ -41,6 +41,7 @@ export default {
   props: {
     showoffcanvas: { type: Boolean, default: false }
   },
+  emits: ['closeoffcanvas'],
   methods: {
     closeoffcanvas() {
       this.$emit('closeoffcanvas', !this.showoffcanvas)

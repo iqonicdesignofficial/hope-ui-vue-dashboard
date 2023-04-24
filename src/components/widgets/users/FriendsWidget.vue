@@ -33,9 +33,9 @@ export default {
       type: Array,
       default: () => []
     },
-    image: { type: String, required: true },
-    name: { type: String, required: true },
-    designation: { type: String, required: true }
+    image: { type: String, default: '' },
+    name: { type: String, default: '' },
+    designation: { type: String, default: '' }
   }
 }
 </script>

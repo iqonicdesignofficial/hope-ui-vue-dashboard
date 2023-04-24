@@ -19,12 +19,6 @@
     </div>
   </footer>
   <!-- Footer Section End -->
-  <b-modal v-model="signInPopup" @hide="hideSignInModal" title="" hide-footer hide-header>
-    <sign-in-form-component></sign-in-form-component>
-  </b-modal>
-  <b-modal v-model="signUpPopup" @hide="hideSignUpModal" title="" hide-footer hide-header>
-    <sign-up-form-component></sign-up-form-component>
-  </b-modal>
   <b-offcanvas v-model="shareOffcanvas" @hide="hideShareOffcanvas" placement="bottom" title="Share">
     <share-offcanvas></share-offcanvas>
   </b-offcanvas>
@@ -33,37 +27,12 @@
 <script>
 import { computed, watch, ref } from 'vue'
 import { useStore } from 'vuex'
-import SignInFormComponent from '@/components/auth/SignInForm.vue'
-import SignUpFormComponent from '@/components/auth/SignUpForm.vue'
 import ShareOffcanvas from '@/components/widgets/ShareOffcanvasNew.vue'
 export default {
-  components: { SignInFormComponent, SignUpFormComponent, ShareOffcanvas },
+  components: { ShareOffcanvas },
   setup() {
     const store = useStore()
     const footerStyle = computed(() => store.getters['setting/footer_style'])
-
-    // Auth Popup
-    const signInPopup = ref(false)
-    const signUpPopup = ref(false)
-    watch(
-      () => store.getters.signInPopup,
-      (newValue) => {
-        signInPopup.value = newValue
-      }
-    )
-    watch(
-      () => store.getters.signUpPopup,
-      (newValue) => {
-        signUpPopup.value = newValue
-      }
-    )
-
-    const hideSignInModal = () => {
-      store.dispatch('openModalAction', { name: 'signInPopup', value: false })
-    }
-    const hideSignUpModal = () => {
-      store.dispatch('openModalAction', { name: 'signUpPopup', value: false })
-    }
 
     // Bottom Canvas
     const shareOffcanvas = ref(false)
@@ -78,16 +47,9 @@ export default {
     }
     return {
       footerStyle,
-      signInPopup,
-      signUpPopup,
-      hideSignInModal,
-      hideSignUpModal,
       shareOffcanvas,
       hideShareOffcanvas
     }
-  },
-  data() {
-    return {}
   }
 }
 </script>

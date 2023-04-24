@@ -4,7 +4,7 @@
       <b-card no-body>
         <b-card-header class="d-flex justify-content-between">
           <div class="header-title">
-            <b-card-title>{{ $t('sidebar.simple-wizard') }}</b-card-title>
+            <b-card-title>{{ 'sidebar.simple-wizard' }}</b-card-title>
           </div>
         </b-card-header>
         <b-card-body>

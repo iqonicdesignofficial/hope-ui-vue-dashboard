@@ -43,12 +43,12 @@ export default {
       type: Array,
       default: () => []
     },
-    image: { type: String, required: true },
-    heading: { type: String, required: true },
-    subHeading: { type: String, required: true },
-    language1: { type: String, required: true },
-    language2: { type: String, required: true },
-    date: { type: String, required: true }
+    image: { type: String, default: '' },
+    heading: { type: String, default: '' },
+    subHeading: { type: String, default: '' },
+    language1: { type: String, default: '' },
+    language2: { type: String, default: '' },
+    date: { type: String, default: '' }
   }
 }
 </script>

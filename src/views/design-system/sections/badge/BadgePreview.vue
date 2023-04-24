@@ -6,6 +6,7 @@
     <p class="h4">Example heading <b-badge variant="danger">New</b-badge></p>
     <p class="h5">Example heading <b-badge variant="warning">New</b-badge></p>
     <p class="h6">Example heading <b-badge variant="info">New</b-badge></p>
+    <p class="h6">Example heading <b-badge variant="gray">New</b-badge></p>
   </div>
   <div class="bd-example">
     <b-badge variant="primary " pill>Primary</b-badge>
@@ -16,5 +17,6 @@
     <b-badge variant="info mx-1" pill>Info</b-badge>
     <b-badge variant="light mx-1" pill>Light</b-badge>
     <b-badge variant="dark " pill>Dark</b-badge>
+    <b-badge variant="gray " pill>Dark</b-badge>
   </div>
 </template>

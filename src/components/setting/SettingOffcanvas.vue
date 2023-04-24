@@ -8,7 +8,7 @@
     </a>
   </div>
   <!-- Setting offcanvas start here -->
-  <b-offcanvas v-model="show" :backdrop="false" title="Live Customizer" :placement="themeSchemeDirection !== 'ltr' ? 'start' : 'end'" class="live-customizer" id="live-customizer" :body-scrolling="true">
+  <b-offcanvas v-model="show" :backdrop="true" title="Live Customizer" :placement="themeSchemeDirection !== 'ltr' ? 'start' : 'end'" class="live-customizer" id="live-customizer" :body-scrolling="true">
     <div class="row">
       <div class="col-lg-12">
         <div>
@@ -21,13 +21,6 @@
           <!-- Theme end here -->
 
           <hr class="hr-horizontal" />
-
-          <!-- Color customizer start here -->
-          <color-customizer />
-          <!-- Color customizer end here -->
-
-          <hr class="hr-horizontal" />
-
           <!-- Menu color start here -->
           <menu-color v-if="isShowSetting('isSidebar')" />
           <!-- Menu color end here -->
@@ -69,7 +62,6 @@ import { useRoute } from 'vue-router'
 
 // Style Components
 import ThemeScheme from './sections/ThemeScheme.vue'
-import ColorCustomizer from './sections/ColorCustomizer.vue'
 import MenuColor from './sections/MenuColor.vue'
 import MenuStyle from './sections/MenuStyle.vue'
 import MenuActiveStyle from './sections/MenuActiveStyle.vue'
@@ -81,7 +73,6 @@ export default {
   components: {
     // Style Components
     ThemeScheme,
-    ColorCustomizer,
     MenuColor,
     MenuStyle,
     MenuActiveStyle,

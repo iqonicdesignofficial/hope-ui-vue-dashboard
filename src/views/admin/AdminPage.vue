@@ -30,7 +30,7 @@
                   <th class="text-center" v-for="(role, index) in roles" :key="index">
                     {{ role.title }}
                     <div style="float: right">
-                      <a class="btn btn-sm btn-icon text-primary flex-end" data-bs-target="#roleEdit" data-bs-toggle="modal" title="Edit Demo Admin" href="#">
+                      <a class="btn btn-sm btn-icon text-primary flex-end" data-bs-toggle="tooltip" title="Edit User" href="#">
                         <span class="btn-inner">
                           <svg @click="editrole(role.title, index)" width="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M11.4925 2.78906H7.75349C4.67849 2.78906 2.75049 4.96606 2.75049 8.04806V16.3621C2.75049 19.4441 4.66949 21.6211 7.75349 21.6211H16.5775C19.6625 21.6211 21.5815 19.4441 21.5815 16.3621V12.3341" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -57,7 +57,7 @@
                   <td class="">
                     {{ permission.title }}
                     <div style="float: right">
-                      <a class="btn btn-sm btn-icon text-primary flex-end" data-bs-toggle="modal" title="Edit Demo Admin" href="#" data-bs-target="#permissionEdit">
+                      <a class="btn btn-sm btn-icon text-primary flex-end" data-bs-toggle="tooltip" title="Edit User" href="#">
                         <span class="btn-inner">
                           <svg @click="editpermission(permission.title, index)" width="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M11.4925 2.78906H7.75349C4.67849 2.78906 2.75049 4.96606 2.75049 8.04806V16.3621C2.75049 19.4441 4.66949 21.6211 7.75349 21.6211H16.5775C19.6625 21.6211 21.5815 19.4441 21.5815 16.3621V12.3341" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>

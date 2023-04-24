@@ -17,7 +17,7 @@
               <div class="w-50 mx-auto mt-2">
                 <div class="input-group search-input search-input">
                   <input type="text" class="form-control" placeholder="Enter your mail" />
-                  <a href="#" class="btn bg-white text-primary">Notify Me</a>
+                  <a href="#" class="btn bg-white text-primary ms-2 rounded">Notify Me</a>
                 </div>
               </div>
             </div>

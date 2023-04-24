@@ -117,6 +117,11 @@
           <b-td>Cell</b-td>
           <b-td>Cell</b-td>
         </b-tr>
+        <b-tr class="table-gray">
+          <b-th scope="row">Gray</b-th>
+          <b-td>Cell</b-td>
+          <b-td>Cell</b-td>
+        </b-tr>
       </tbody>
     </b-table-simple>
   </div>

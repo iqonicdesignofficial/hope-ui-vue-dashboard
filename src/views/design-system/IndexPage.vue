@@ -173,31 +173,31 @@
               </b-button>
               <b-collapse class="list-unstyled ps-3" tag="ul" id="forms-collapse">
                 <li>
-                  <a class="nav-link d-inline-flex align-items-center rounded" href="#overview"> overview </a>
+                  <a class="nav-link d-inline-flex align-items-center rounded" href="#formOverview"> overview </a>
                 </li>
                 <li>
-                  <a class="nav-link d-inline-flex align-items-center rounded" href="#disabled-forms"> disable </a>
+                  <a class="nav-link d-inline-flex align-items-center rounded" href="#formDisabled"> disable </a>
                 </li>
                 <li>
-                  <a class="nav-link d-inline-flex align-items-center rounded" href="#sizing"> sizing </a>
+                  <a class="nav-link d-inline-flex align-items-center rounded" href="#formSizing"> sizing </a>
                 </li>
                 <li>
-                  <a class="nav-link d-inline-flex align-items-center rounded" href="#input-group"> input-group </a>
+                  <a class="nav-link d-inline-flex align-items-center rounded" href="#formInputGroup"> input-group </a>
                 </li>
                 <li>
-                  <a class="nav-link d-inline-flex align-items-center rounded" href="#a-form-control"> alternate </a>
+                  <a class="nav-link d-inline-flex align-items-center rounded" href="#formAlertnateInput"> alternate </a>
                 </li>
                 <li>
-                  <a class="nav-link d-inline-flex align-items-center rounded" href="#floating-labels"> floating-label </a>
+                  <a class="nav-link d-inline-flex align-items-center rounded" href="#formFloatingLabels"> floating-label </a>
                 </li>
                 <li>
-                  <a class="nav-link d-inline-flex align-items-center rounded" href="#a-floating-labels"> alternate-label </a>
+                  <a class="nav-link d-inline-flex align-items-center rounded" href="#formAlertnateFloatLabels"> alternate-label </a>
                 </li>
                 <li>
-                  <a class="nav-link d-inline-flex align-items-center rounded" href="#toggle-btn"> toggle </a>
+                  <a class="nav-link d-inline-flex align-items-center rounded" href="#formToggleButton"> toggle </a>
                 </li>
                 <li>
-                  <a class="nav-link d-inline-flex align-items-center rounded" href="#validation"> validation </a>
+                  <a class="nav-link d-inline-flex align-items-center rounded" href="#formValidation"> validation </a>
                 </li>
               </b-collapse>
             </li>
@@ -253,7 +253,7 @@
           <pagination-section></pagination-section>
           <popovers-section></popovers-section>
           <progress-section></progress-section>
-          <ribbon-section></ribbon-section>
+          <!-- <ribbon-section></ribbon-section> -->
           <scrollspy-section></scrollspy-section>
           <spinners-section></spinners-section>
           <toasts-section></toasts-section>

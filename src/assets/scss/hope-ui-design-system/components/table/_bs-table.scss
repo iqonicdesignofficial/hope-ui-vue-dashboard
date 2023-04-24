@@ -4,10 +4,8 @@
         tr {
             background-color: $body-bg;
             th {
-                padding: $table-th-padding-y $table-th-padding-x;
-                text-transform: uppercase;
+                text-transform: Capitalize;
                 letter-spacing: $table-th-letter-spacing;
-                border-bottom: 2px solid transparent !important;
             }
         }
     }

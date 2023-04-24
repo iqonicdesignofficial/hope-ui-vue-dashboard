@@ -5,9 +5,6 @@
         <template #header>
           <div class="d-flex align-items-center justify-content-center">
             <h4 class="card-title mb-0 flex-grow-1">Dual Tone</h4>
-            <!-- <div>
-              <input class="form-control" name="search" v-model="search" />
-            </div> -->
           </div>
         </template>
         <div class="icon-grid">

@@ -91,6 +91,12 @@ const defaultChildRoutes = (prefix) => [
     meta: { auth: true, name: 'Timeline', isBanner: true },
     component: () => import('@/views/spacial-pages/TimelinePage.vue')
   },
+  {
+    path: '/rtl-support',
+    name: prefix + '.rtlsupport',
+    meta: { auth: true, name: 'RTL-Support', isBanner: true },
+    component: () => import('@/views/spacial-pages/RtlSupport.vue')
+  },
   // Users Pages
   {
     path: '/user-list',
@@ -173,6 +179,12 @@ const defaultChildRoutes = (prefix) => [
     name: prefix + '.bootstrap-table',
     meta: { auth: true, name: 'Botstrap Table', isBanner: true },
     component: () => import('@/views/tables/BootstrapTable.vue')
+  },
+  {
+    path: '/datatable',
+    name: prefix + '.data-table',
+    meta: { auth: true, name: 'Data Table', isBanner: true },
+    component: () => import('@/views/tables/DataTable.vue')
   },
   // Icons Pages
   {
@@ -299,6 +311,8 @@ const routes = [
 ]
 
 const router = createRouter({
+  linkActiveClass: 'active',
+  linkExactActiveClass: 'exact-active',
   history: createWebHistory(process.env.BASE_URL),
   base: process.env.BASE_URL,
   routes

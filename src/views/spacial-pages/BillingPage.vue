@@ -11,7 +11,6 @@
         </b-row>
         <b-row>
           <b-col sm="12 mt-4">
-            <!-- <div class="table-responsive-lg"> -->
             <b-table-simple responsive="lg">
               <b-thead>
                 <b-tr>

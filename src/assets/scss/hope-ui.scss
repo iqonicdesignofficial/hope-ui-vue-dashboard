@@ -9,15 +9,12 @@
 
 @import "./hope-ui-design-system/helper/fonts";
 
-
 // Configuration
 @import "./bootstrap/functions";
-
-// Variables
 @import "./hope-ui-design-system/variable";
 @import "./hope-ui-design-system/variables/index";
 @import "./bootstrap/variables";
-
+@import "./bootstrap/maps";
 @import "./bootstrap/mixins";
 @import "./bootstrap/utilities";
 

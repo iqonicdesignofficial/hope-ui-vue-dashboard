@@ -47,7 +47,7 @@
                       <h6>60%</h6>
                     </div>
                     <div class="progress bg-soft-info shadow-none w-100" style="height: 6px">
-                      <div class="progress-bar bg-info" data-toggle="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar bg-info" data-toggle="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%"></div>
                     </div>
                   </td>
                 </tr>
@@ -75,7 +75,7 @@
                       <h6>10%</h6>
                     </div>
                     <div class="progress bg-soft-danger shadow-none w-100" style="height: 6px">
-                      <div class="progress-bar bg-danger" data-toggle="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar bg-danger" data-toggle="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%"></div>
                     </div>
                   </td>
                 </tr>
@@ -103,7 +103,7 @@
                       <h6>100%</h6>
                     </div>
                     <div class="progress bg-soft-success shadow-none w-100" style="height: 6px">
-                      <div class="progress-bar bg-success" data-toggle="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar bg-success" data-toggle="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
                     </div>
                   </td>
                 </tr>
@@ -137,7 +137,7 @@
                       <h6>100%</h6>
                     </div>
                     <div class="progress bg-soft-success shadow-none w-100" style="height: 6px">
-                      <div class="progress-bar bg-success" data-toggle="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar bg-success" data-toggle="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
                     </div>
                   </td>
                 </tr>
@@ -162,7 +162,7 @@
                       <h6>25%</h6>
                     </div>
                     <div class="progress bg-soft-primary shadow-none w-100" style="height: 6px">
-                      <div class="progress-bar bg-primary" data-toggle="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar bg-primary" data-toggle="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%"></div>
                     </div>
                   </td>
                 </tr>
@@ -190,7 +190,7 @@
                       <h6>40%</h6>
                     </div>
                     <div class="progress bg-soft-warning shadow-none w-100" style="height: 6px">
-                      <div class="progress-bar bg-warning" data-toggle="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar bg-warning" data-toggle="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"></div>
                     </div>
                   </td>
                 </tr>

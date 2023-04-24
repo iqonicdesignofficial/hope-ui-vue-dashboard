@@ -5,7 +5,7 @@
         <b-row class="justify-content-center">
           <b-col md="10">
             <b-card class="card-transparent shadow-none d-flex justify-content-center mb-0 auth-card iq-auth-form">
-              <router-link :to="{ name: 'default.dashboard' }" class="navbar-brand d-flex align-items-center mb-3">
+              <router-link :to="{ name: 'default.dashboard' }" class="navbar-brand d-flex align-items-center mb-3 text-primary">
                 <brand-logo></brand-logo>
                 <h4 class="logo-title ms-3 mb-0" data-setting="app_name"><brand-name></brand-name></h4>
               </router-link>
@@ -30,7 +30,7 @@
                       <input type="checkbox" class="form-check-input" id="customCheck1" />
                       <label class="form-check-label" for="customCheck1">Remember Me</label>
                     </div>
-                    <a href="recoverpw.html">Forgot Password?</a>
+                    <a href="/auth/reset-password">Forgot Password?</a>
                   </div>
                 </div>
                 <div class="d-flex justify-content-center">
@@ -53,7 +53,7 @@
                     </li>
                   </ul>
                 </div>
-                <p class="mt-3 text-center">Don’t have an account? <a href="sign-up.html" class="text-underline">Click here to sign up.</a></p>
+                <p class="mt-3 text-center">Don’t have an account? <a href="/auth/register" class="text-underline">Click here to sign up.</a></p>
               </form>
             </b-card>
           </b-col>

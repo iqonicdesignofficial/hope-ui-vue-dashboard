@@ -56,18 +56,18 @@
 .bd-aside{
     .active{
         color: var(--#{$variable-prefix}primary);
-        background-color: var(--#{$variable-prefix}primary-tint-88);
+        background-color: var(--#{$variable-prefix}primary-tint-90);
     }
     .btn:hover{
         color: var(--#{$variable-prefix}primary);
-        background-color: var(--#{$variable-prefix}primary-tint-88);
+        background-color: var(--#{$variable-prefix}primary-tint-90);
     }
     .btn:focus{
         color: var(--#{$variable-prefix}primary);
-        background-color: var(--#{$variable-prefix}primary-tint-88);
+        background-color: var(--#{$variable-prefix}primary-tint-90);
         box-shadow: 0 0 0 0.063rem rgba(var(--#{$variable-prefix}primary-rgb),0.7);
     }
     a:hover{
-        background-color: var(--#{$variable-prefix}primary-tint-88) ;
+        background-color: var(--#{$variable-prefix}primary-tint-90) ;
     }
 }

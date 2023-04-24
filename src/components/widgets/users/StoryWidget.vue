@@ -25,9 +25,9 @@ export default {
       type: Array,
       default: () => []
     },
-    image: { type: String, required: true },
-    design: { type: String, required: true },
-    time: { type: String, required: true }
+    image: { type: String, default: '' },
+    design: { type: String, default: '' },
+    time: { type: String, default: '' }
   }
 }
 </script>

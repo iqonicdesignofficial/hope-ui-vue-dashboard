@@ -7,7 +7,7 @@
       <div class="col-md-6 p-0">
         <div class="card card-transparent auth-card shadow-none d-flex justify-content-center mb-0">
           <div class="card-body">
-            <router-link :to="{ name: 'default.dashboard' }" class="navbar-brand d-flex align-items-center mb-3">
+            <router-link :to="{ name: 'default.dashboard' }" class="navbar-brand d-flex align-items-center mb-3 text-primary">
               <brand-logo></brand-logo>
               <h4 class="logo-title ms-3 mb-0"><brand-name></brand-name></h4>
             </router-link>

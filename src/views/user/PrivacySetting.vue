@@ -39,7 +39,7 @@
             <div class="data-privacy">
               <h4 class="mb-2">Photo Of You</h4>
               <div class="form-check">
-                <input type="radio" class="form-check-input" name="customRadio0" id="automatically" checked="" />
+                <input type="radio" class="form-check-input" name="customRadio0" id="automatically" checked />
                 <label for="automatically" class="form-check-label pl-2">Add Automatically</label>
               </div>
               <div class="form-check">

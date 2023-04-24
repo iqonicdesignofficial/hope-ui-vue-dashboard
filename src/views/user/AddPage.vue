@@ -2,11 +2,11 @@
   <b-row>
     <b-col xl="3" lg="4">
       <b-card>
-        <card-header class="d-flex justify-content-between">
+        <b-card-header class="d-flex justify-content-between">
           <div class="header-title">
             <h4 class="card-title">Add New User</h4>
           </div>
-        </card-header>
+        </b-card-header>
         <b-card-body>
           <form>
             <div class="form-group">
@@ -30,7 +30,7 @@
                   <a href="javascript:void(0);">.jpg</a>
                   <a href="javascript:void(0);">.png</a>
                   <a href="javascript:void(0);">.jpeg</a>
-                  <span>allowed</span>
+                  <span> allowed</span>
                 </div>
               </div>
             </div>
@@ -67,11 +67,11 @@
     </b-col>
     <div class="col-xl-9 col-lg-8">
       <b-card>
-        <card-header class="d-flex justify-content-between">
+        <b-card-header class="d-flex justify-content-between">
           <div class="header-title">
             <h4 class="card-title">New User Information</h4>
           </div>
-        </card-header>
+        </b-card-header>
         <b-card-body>
           <div class="new-user-info">
             <form>

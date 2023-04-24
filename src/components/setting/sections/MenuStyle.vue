@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h6 class="mb-3">Menu Style</h6>
+    <h6 class="mb-3">Sidebar Types</h6>
     <div class="d-grid gap-3 grid-cols-3 mb-3 text-center">
       <checkbox-input btn-name="sidebar_type" :imgComponent="true" label-title="Mini" id="sidebar-mini" label-class="p-0" :default-checked="menuStyle.value" value="sidebar-mini" @onChange="updateCheckbox">
         <img src="@/assets/images/settings/dark/03.png" alt="mini" className="mode dark-img img-fluid" loading="lazy" />

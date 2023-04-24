@@ -1,12 +1,24 @@
 export default {
   setSetting: ({ commit }, payload) => commit('setSetting', payload),
+  reset_state: ({ commit }) => commit('reset_state'),
   saveLocal: ({ commit }, payload) => commit('saveLocal', payload),
   app_name: ({ commit }, payload) => commit('app_name', payload),
   theme_scheme_direction: ({ commit }, payload) => commit('theme_scheme_direction', payload),
   theme_scheme: ({ commit }, payload) => commit('theme_scheme', payload),
+  theme_style_appearance: ({ commit }, payload) => commit('theme_style_appearance', payload),
   theme_color: ({ commit }, payload) => commit('theme_color', payload),
+  theme_transition: ({ commit }, payload) => commit('theme_transition', payload),
+  theme_font_size: ({ commit }, payload) => commit('theme_font_size', payload),
+  // page_layout: ({ commit }, payload) => commit('page_layout', payload),
   header_navbar: ({ commit }, payload) => commit('header_navbar', payload),
+  // header_banner: ({ commit }, payload) => commit('header_banner', payload),
   sidebar_color: ({ commit }, payload) => commit('sidebar_color', payload),
   sidebar_type: ({ commit }, payload) => commit('sidebar_type', payload),
-  sidebar_menu_style: ({ commit }, payload) => commit('sidebar_menu_style', payload)
+  sidebar_show: ({ commit }, payload) => commit('sidebar_show', payload),
+  navbar_show: ({ commit }, payload) => commit('navbar_show', payload),
+  sidebar_menu_style: ({ commit }, payload) => commit('sidebar_menu_style', payload),
+  card_style: ({ commit }, payload) => commit('card_style', payload),
+  // footer_style: ({ commit }, payload) => commit('footer_style', payload),
+  body_font_family: ({ commit }, payload) => commit('body_font_family', payload),
+  heading_font_family: ({ commit }, payload) => commit('heading_font_family', payload)
 }

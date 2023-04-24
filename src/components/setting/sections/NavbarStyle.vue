@@ -19,6 +19,9 @@
         <img src="@/assets/images/settings/light/01.png" alt="default" class="mode light-img img-fluid" width="200" height="200" loading="lazy" />
       </radio-input>
     </div>
+    <div class="btn btn-border active col-span-full mt-4 d-block" data-setting="navbar" data-name="navbar-default" data-value="default">
+      <span class=""> Default Navbar</span>
+    </div>
   </div>
 </template>
 

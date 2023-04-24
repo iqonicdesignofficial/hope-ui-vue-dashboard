@@ -9,11 +9,14 @@
 .iq-navbar {
     border-color: $card-bg;
     background-color: $card-bg;
-
-    @include nav-item(false) {
-        color: $white;
-        &:hover {
-            color: tint-color($body-color, 40%);
+    .navbar-nav{
+        .nav-item{
+            .nav-link{
+                color: $white;
+                &:hover {
+                    color: tint-color($body-color, 40%);
+                }
+            }
         }
     }
 	.navbar-brand {

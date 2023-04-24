@@ -1,5 +1,5 @@
 <template>
-  <article class="pb-5" id="Accordion">
+  <article class="" id="Accordion">
     <card-lable lablename="Accordian" lablelink="https://templates.iqonic.design/hope-ui/documentation/vue/dist/Accordian"></card-lable>
     <section-components preview-component="accordion-preview" codeComponent="accordion-code" targetpreview="accordion-preview" targetcode="accordion-code" class="iq-doc-head"></section-components>
   </article>

@@ -1,14 +1,14 @@
 .dual-horizontal {
 	position: sticky;
 	top: 0;
-	z-index: 889;
 	padding: 0;
-	background: $primary;
+	background: var(--#{$variable-prefix}primary);
+	z-index: 1;
+	.nav{
+        background: var(--#{$variable-prefix}primary);
+    }
 	.navbar-nav {
 		.nav-item {
-			&:not(:first-child) {
-				margin-left: $spacer;
-			}
 			&:hover {
 				.nav-link {
 					background: $white;
@@ -36,7 +36,17 @@
 				}
 			}
 			.nav-link{
-				color: $primary;
+				color: var(--#{$variable-prefix}primary);
+			}
+		}
+	}
+
+	.dual-horizontal{
+		.horizontal-nav{
+			&.mobile-offcanvas{
+				.nav-link{
+					color: $white;
+				}
 			}
 		}
 	}

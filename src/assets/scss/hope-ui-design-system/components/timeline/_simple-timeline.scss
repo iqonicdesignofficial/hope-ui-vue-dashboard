@@ -41,7 +41,7 @@
         .timeline-dots {
             height: 15px;
             width: 15px;
-            background: $white !important;
+            background: $white;
         }
         .timeline-dots1 {
             position: absolute;
@@ -53,8 +53,11 @@
             background: $white;
             height: 2.5rem;
             width: 2.5rem;
-            line-height: 25px;
-            text-align: center;
+            // line-height: 25px;
+            // text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         .timeline-dots.timeline-dot1 {
             height: 15px;

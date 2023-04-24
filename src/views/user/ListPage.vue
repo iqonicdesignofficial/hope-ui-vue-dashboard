@@ -49,7 +49,8 @@ export default {
         country: 'USA',
         status: 'Active',
         company: 'Acme Corporation',
-        date: '2019/12/01'
+        date: '2019/12/01',
+        color: 'bg-primary'
       },
       {
         image: require('@/assets/images/shapes/02.png'),
@@ -59,7 +60,8 @@ export default {
         country: 'Indonesia',
         status: 'Active',
         company: 'Soylent Corp',
-        date: '2019/12/01'
+        date: '2019/12/01',
+        color: 'bg-primary'
       },
       {
         image: require('@/assets/images/shapes/03.png'),
@@ -69,7 +71,8 @@ export default {
         country: 'Brazil',
         status: 'Pending',
         company: 'Umbrella Corporation',
-        date: '2019/12/01'
+        date: '2019/12/01',
+        color: 'bg-warning'
       },
       {
         image: require('@/assets/images/shapes/04.png'),
@@ -79,7 +82,8 @@ export default {
         country: 'India',
         status: 'Inactive',
         company: 'Vehement Capital',
-        date: '2019/12/01'
+        date: '2019/12/01',
+        color: 'bg-danger'
       },
       {
         image: require('@/assets/images/shapes/05.png'),
@@ -89,7 +93,8 @@ export default {
         country: 'Africa',
         status: 'Active',
         company: 'Massive Dynamic',
-        date: '2019/12/01'
+        date: '2019/12/01',
+        color: 'bg-primary'
       },
       {
         image: require('@/assets/images/shapes/06.png'),
@@ -99,7 +104,8 @@ export default {
         country: 'Brazil',
         status: 'Pending',
         company: 'Globex Corporation',
-        date: '2019/12/01'
+        date: '2019/12/01',
+        color: 'bg-warning'
       },
       {
         image: require('@/assets/images/shapes/03.png'),
@@ -109,7 +115,8 @@ export default {
         country: 'USA',
         status: 'Hold',
         company: 'Acme Corporation',
-        date: '2019/12/01'
+        date: '2019/12/01',
+        color: 'bg-info'
       },
       {
         image: require('@/assets/images/shapes/05.png'),
@@ -119,7 +126,8 @@ export default {
         country: 'Africa',
         status: 'Complite',
         company: 'Vehement Capital',
-        date: '2019/12/01'
+        date: '2019/12/01',
+        color: 'bg-success'
       },
       {
         image: require('@/assets/images/shapes/02.png'),
@@ -129,7 +137,8 @@ export default {
         country: 'Brazil',
         status: 'Active',
         company: 'Massive Dynamic',
-        date: '2019/12/01'
+        date: '2019/12/01',
+        color: 'bg-primary'
       }
     ]
     return {

@@ -3,6 +3,7 @@
     <div class="d-flex align-items-center justify-content-between">
       <h6 class="mt-4 mb-3">Color Customizer</h6>
       <div class="d-flex align-items-center">
+        <a href="#custom-color" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="custom-color">Custom</a>
         <div data-setting="radio">
           <button class="btn bg-transparent" @click="resetColor">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -13,8 +14,18 @@
         </div>
       </div>
     </div>
+    <div class="collapse" id="custom-color">
+      <div class="form-group d-flex justify-content-between align-items-center">
+        <label for="custom-primary-color">Primary</label>
+        <input name="primary" type="color" @input="onColorUpdate" id="custom-primary-color" :value="themeColor.colors['--{{prefix}}primary']" />
+      </div>
+      <div class="form-group d-flex d-flex justify-content-between align-items-center">
+        <label for="custom-info-color">Secondary</label>
+        <input name="info" type="color" @input="onColorUpdate" id="custom-info-color" :value="themeColor.colors['--{{prefix}}info']" />
+      </div>
+    </div>
     <div class="grid-cols-5 mb-4 d-grid gap-3">
-      <radio-input v-for="(data, index) in defaultColors" :key="index" btn-name="theme_color" :id="data.value" label-class="bg-transparent d-block" :default-checked="themeColor" :value="data.value" @onChange="updateRadio">
+      <radio-input v-for="(data, index) in defaultColors" :key="index" btn-name="theme_color" :id="data.value" label-class="bg-transparent d-block" :default-checked="themeColor.value" :value="data.value" @onChange="updateRadio">
         <svg class="customizer-btn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="26" height="26">
           <circle cx="12" cy="12" r="10" :fill="data.colors['--{{prefix}}primary']" />
           <path d="M2,12 a1,1 1 1,0 20,0" :fill="data.colors['--{{prefix}}info']" />
@@ -27,6 +38,7 @@
 import { computed } from 'vue'
 import { useStore } from 'vuex'
 import RadioInput from '@/components/custom/elements/RadioInput'
+import _ from 'lodash'
 export default {
   name: 'ColorCustomizer',
   components: {
@@ -74,16 +86,42 @@ export default {
     ]
 
     const updateRadio = (value, name) => {
-      store.dispatch(`setting/${name}`, defaultColors.find((item) => item.value === value).value)
+      store.dispatch(
+        `setting/${name}`,
+        defaultColors.find((item) => item.value === value)
+      )
     }
 
     const resetColor = () => {
-      store.dispatch('setting/theme_color', 'theme-color-default')
+      const obj = {
+        value: 'theme-color-default',
+        colors: {
+          '--{{prefix}}primary': '#3a57e8',
+          '--{{prefix}}info': '#08B1BA'
+        }
+      }
+      store.dispatch('setting/theme_color', obj)
+    }
+
+    const batterFun = _.debounce((obj) => {
+      store.dispatch('setting/theme_color', obj)
+    }, 300)
+
+    const onColorUpdate = (e) => {
+      const { name, value } = e.target
+      const obj = {
+        value: 'custom',
+        colors: {
+          ['--{{prefix}}' + name]: value
+        }
+      }
+      batterFun(obj)
     }
     return {
       themeColor,
       updateRadio,
       defaultColors,
+      onColorUpdate,
       resetColor
     }
   }

@@ -69,15 +69,18 @@ import FilterIcon from './svg-icons/FilterIcon'
 import FolderIcon from './svg-icons/FolderIcon'
 import HeartIcon from './svg-icons/HeartIcon'
 import HomeIcon from './svg-icons/HomeIcon'
+import IIcon from './svg-icons/IIcon.vue'
 import KeySquareIcon from './svg-icons/KeySquareIcon'
 import LocationArrowIcon from './svg-icons/LocationArrowIcon'
 import LocationIcon from './svg-icons/LocationIcon'
 import LockClosedIcon from './svg-icons/LockClosedIcon'
 import LockOpenIcon from './svg-icons/LockOpenIcon'
+import LightingIcon from './svg-icons/LightingIcon'
 import MessageIcon from './svg-icons/MessageIcon'
 import MicrophoneIcon from './svg-icons/MicrophoneIcon'
 import MicrophoneOnIcon from './svg-icons/MicrophoneOnIcon'
 import MissedCallIcon from './svg-icons/MissedCallIcon'
+import MoonIcon from './svg-icons/MoonIcon'
 import OfferIcon from '../solid/svg-icons/OfferIcon.vue'
 import PencilAltIcon from './svg-icons/PencilAltIcon'
 import PencilIcon from './svg-icons/PencilIcon'
@@ -102,6 +105,7 @@ import SquareXIcon from './svg-icons/SquareXIcon'
 import StarIcon from './svg-icons/StarIcon'
 import StartIcon from './svg-icons/StartIcon'
 import SwitchVerticalIcon from './svg-icons/SwitchVerticalIcon'
+import TableIcon from './svg-icons/TableIcon.vue'
 import TicketIcon from './svg-icons/TicketIcon'
 import TimerIcon from './svg-icons/TimerIcon'
 import TrashIcon from './svg-icons/TrashIcon'
@@ -185,15 +189,18 @@ export default {
     FolderIcon,
     HeartIcon,
     HomeIcon,
+    IIcon,
     KeySquareIcon,
     LocationArrowIcon,
     LocationIcon,
     LockClosedIcon,
     LockOpenIcon,
+    LightingIcon,
     MessageIcon,
     MicrophoneIcon,
     MicrophoneOnIcon,
     MissedCallIcon,
+    MoonIcon,
     OfferIcon,
     PencilAltIcon,
     PencilIcon,
@@ -218,6 +225,7 @@ export default {
     StarIcon,
     StartIcon,
     SwitchVerticalIcon,
+    TableIcon,
     TicketIcon,
     TimerIcon,
     TrashIcon,

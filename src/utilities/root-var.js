@@ -37,3 +37,27 @@ export const getVariableColor = () => {
     primary_light: getRootVars(`--${prefix}primary-tint-20`)
   }
 }
+
+// setFontFamily function
+export const setFontFamily = (type, fontFamily) => {
+  // add font into head
+  getElems(`[data-font-${type}="google"]`).forEach((elem) => {
+    elem.remove()
+  })
+  if (fontFamily === null) {
+    fontFamily = 'Inter'
+  }
+  if (fontFamily !== null && fontFamily !== 'Inter') {
+    const head = document.querySelector('head')
+    const link = document.createElement('link')
+    link.setAttribute('rel', 'stylesheet')
+    link.setAttribute(`data-font-${type}`, 'google')
+    link.setAttribute('href', `https://fonts.googleapis.com/css?family=${fontFamily}:300;400;500;700&display=swap`)
+    head.appendChild(link)
+  }
+  // change font-family by style root variables
+  const prefix = getRootVars('--prefix') || 'bs-'
+  const obj = {}
+  obj[`--${prefix}${type}-font-family`] = `${fontFamily}, sans-serif`
+  setRootVariables(obj)
+}

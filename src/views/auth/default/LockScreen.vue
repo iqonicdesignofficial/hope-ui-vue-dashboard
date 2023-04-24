@@ -3,7 +3,7 @@
     <b-row class="m-0 align-items-center bg-white vh-100">
       <b-col md="6 p-0">
         <b-card class="card-transparent auth-card shadow-none d-flex justify-content-center mb-0">
-          <router-link :to="{ name: 'default.dashboard' }" class="navbar-brand d-flex align-items-center mb-3">
+          <router-link :to="{ name: 'default.dashboard' }" class="navbar-brand d-flex align-items-center mb-3 text-primary">
             <brand-logo></brand-logo>
             <h4 class="logo-title ms-3 mb-0"><brand-name></brand-name></h4>
           </router-link>

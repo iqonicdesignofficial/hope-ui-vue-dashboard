@@ -63,7 +63,8 @@
       <b-list-group-item href="#" variant="warning">A simple warning list group item</b-list-group-item>
       <b-list-group-item href="#" variant="info">A simple info list group item</b-list-group-item>
       <b-list-group-item href="#" variant="light">A simple light list group item</b-list-group-item>
-      <b-list-group-item href="#" variant="dark text-white">A simple dark list group item</b-list-group-item>
+      <b-list-group-item href="#" variant="dark">A simple dark list group item</b-list-group-item>
+      <b-list-group-item href="#" variant="gray ">A simple gray list group item</b-list-group-item>
     </b-list-group>
   </div>
 

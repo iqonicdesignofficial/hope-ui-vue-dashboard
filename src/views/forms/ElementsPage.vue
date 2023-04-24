@@ -77,7 +77,7 @@
             </b-form-group>
             <b-form-group>
               <label for="input-106" class="form-label">Password Input </label>
-              <b-form-input id="input-106" type="password" :value="markjhon123">markjhon123</b-form-input>
+              <b-form-input id="input-106" type="password" :value="'markjhon123'">markjhon123</b-form-input>
             </b-form-group>
             <b-form-group>
               <label for="input-107" class="form-label">Date Input </label>
@@ -85,7 +85,7 @@
             </b-form-group>
             <b-form-group>
               <label for="input-108" class="form-label">Week Input </label>
-              <b-form-input id="input-108" type="week" placeholder="2019-W46"></b-form-input>
+              <b-form-input id="input-108" type="text" placeholder="2019-W46"></b-form-input>
             </b-form-group>
             <b-form-group>
               <label for="input-109" class="form-label">Time Input </label>
@@ -93,7 +93,7 @@
             </b-form-group>
             <b-form-group>
               <label for="input-110" class="form-label">Date and Time Input </label>
-              <b-form-input id="input-110" type="datetime-local" placeholder="2019-12-19T13:45:00"></b-form-input>
+              <b-form-input id="input-110" type="date" placeholder="2019-12-19T13:45:00"></b-form-input>
             </b-form-group>
             <b-form-group>
               <label for="input-111" class="form-label">Example textarea </label>
@@ -139,16 +139,16 @@
         <b-card-body>
           <b-form>
             <b-form-group>
-              <label for="input-201" class="form-label">Small</label>
-              <b-form-select :options="options01" size="sm" id="input-201"></b-form-select>
+              <label for="input-204" class="form-label">Small</label>
+              <b-form-select :options="options01" size="sm" id="input-204"></b-form-select>
             </b-form-group>
             <b-form-group>
-              <label for="input-202" class="form-label">Default</label>
-              <b-form-select :options="options01" id="input-202"></b-form-select>
+              <label for="input-205" class="form-label">Default</label>
+              <b-form-select :options="options01" id="input-205"></b-form-select>
             </b-form-group>
             <b-form-group>
-              <label for="input-203" class="form-label">Large</label>
-              <b-form-select :options="options01" size="lg" id="input-203"></b-form-select>
+              <label for="input-206" class="form-label">Large</label>
+              <b-form-select :options="options01" size="lg" id="input-206"></b-form-select>
             </b-form-group>
           </b-form>
         </b-card-body>
@@ -292,19 +292,19 @@
             </b-form-group>
             <b-form-group>
               <label for="input-1307" class="form-label">Example multiple select</label>
-              <b-form-input type="range4" id="input-1307"></b-form-input>
+              <b-form-input type="range" id="input-1307"></b-form-input>
             </b-form-group>
             <b-form-group>
               <b-form-checkbox>Default Checkbox</b-form-checkbox>
-              <b-form-checkbox value="true" v-model="checked">Checked Checkbox</b-form-checkbox>
+              <b-form-checkbox value="true" aria-checked="true">Checked Checkbox</b-form-checkbox>
               <b-form-checkbox disabled>Default Checkbox</b-form-checkbox>
-              <b-form-checkbox disabled value="true" v-model="checked">Checked Checkbox</b-form-checkbox>
+              <b-form-checkbox disabled value="true" aria-checked="true">Checked Checkbox</b-form-checkbox>
             </b-form-group>
             <b-form-group>
               <b-form-radio>Default Radio</b-form-radio>
-              <b-form-radio value="true" v-model="checked">Checked Radio</b-form-radio>
+              <b-form-radio value="true" aria-checked="true">Checked Radio</b-form-radio>
               <b-form-radio disabled>Default Radio</b-form-radio>
-              <b-form-radio disabled value="true" v-model="checked">Checked Radio</b-form-radio>
+              <b-form-radio disabled value="true" aria-checked="true">Checked Radio</b-form-radio>
             </b-form-group>
             <b-form-group>
               <b-form-checkbox switch>Default switch checkbox input</b-form-checkbox>

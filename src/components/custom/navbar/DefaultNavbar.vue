@@ -1,5 +1,6 @@
 <template>
-  <nav :class="`nav navbar navbar-expand-lg navbar-light iq-navbar ${headerNavbar}`">
+  <nav :class="`nav navbar navbar-expand-xl navbar-light iq-navbar ${headerNavbar}`">
+    <!-- <nav :class="`nav navbar navbar-expand-xl navbar-light iq-navbar ${headerNavbar} ${navbarHide.join('')}`"> -->
     <div class="container-fluid navbar-inner">
       <slot></slot>
       <div class="input-group search-input" v-if="isSearch">

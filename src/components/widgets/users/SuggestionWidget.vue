@@ -30,9 +30,9 @@ export default {
       type: Array,
       default: () => []
     },
-    image: { type: String, required: true },
-    name: { type: String, required: true },
-    mutualFriends: { type: String, required: true }
+    image: { type: String, default: '' },
+    name: { type: String, default: '' },
+    mutualFriends: { type: String, default: '' }
   }
 }
 </script>

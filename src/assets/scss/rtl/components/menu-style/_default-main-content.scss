@@ -1,6 +1,6 @@
 .sidebar {
     &+.main-content {
-        margin-right: $navbar-vertical-width;
+        margin-right: var(--sidebar-width);
         margin-left: auto;
     }
 }

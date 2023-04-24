@@ -6,23 +6,23 @@
     <td>{{ item.email }}</td>
     <td>{{ item.country }}</td>
     <td>
-      <span class="badge bg-primary">{{ item.status }}</span>
+      <span class="badge" :class="item.color">{{ item.status }}</span>
     </td>
     <td>{{ item.company }}</td>
     <td>{{ item.date }}</td>
     <td>
       <div class="flex align-items-center list-user-action">
-        <a class="btn btn-sm btn-icon btn-success" data-bs-toggle="tooltip" data-placement="top" title="" data-original-title="Add" href="#">
+        <a class="btn btn-sm btn-icon btn-success mx-1" data-bs-toggle="tooltip" data-bs-placement="top" title="Add" href="#">
           <span class="btn-inner">
             <icon-component type="outlined" icon-name="user-add" />
           </span>
         </a>
-        <a class="btn btn-sm btn-icon btn-warning" data-bs-toggle="tooltip" data-placement="top" title="" data-original-title="Edit" href="#">
+        <a class="btn btn-sm btn-icon btn-warning mx-1" data-bs-toggle="tooltip" data-bs-placement="top"  data-bs-original-title ="Edit" href="#">
           <span class="btn-inner">
             <icon-component type="outlined" icon-name="pencil-alt" />
           </span>
         </a>
-        <a class="btn btn-sm btn-icon btn-danger" data-bs-toggle="tooltip" data-placement="top" title="" data-original-title="Delete" href="#">
+        <a class="btn btn-sm btn-icon btn-danger mx-1" data-bs-toggle="tooltip" data-bs-placement="top"  data-bs-original-title ="Delete" href="#">
           <span class="btn-inner">
             <icon-component type="outlined" icon-name="trash" />
           </span>
@@ -38,14 +38,15 @@ export default {
       type: Array,
       default: () => []
     },
-    name: { type: String, required: true },
-    image: { type: String, required: true },
-    contact: { type: String, required: true },
-    email: { type: String, required: true },
-    country: { type: String, required: true },
-    status: { type: String, required: true },
-    company: { type: String, required: true },
-    date: { type: String, required: true }
+    name: { type: String, default: '' },
+    image: { type: String, default: '' },
+    contact: { type: String, default: '' },
+    email: { type: String, default: '' },
+    country: { type: String, default: '' },
+    status: { type: String, default: '' },
+    company: { type: String, default: '' },
+    date: { type: String, default: '' },
+    color: { type: String, default: '' }
   }
 }
 </script>

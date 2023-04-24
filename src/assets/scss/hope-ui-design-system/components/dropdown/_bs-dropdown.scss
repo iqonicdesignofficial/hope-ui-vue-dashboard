@@ -27,7 +27,11 @@
         backface-visibility: visible !important;
         animation-name: dropdownAnimation;
     }
-}
+    .dropdown-divider{
+        border-top: 1px solid ;
+        opacity: 0.25;
+    }
+}   
 .navbar-nav {
 	.dropdown-menu {
 		position: absolute;

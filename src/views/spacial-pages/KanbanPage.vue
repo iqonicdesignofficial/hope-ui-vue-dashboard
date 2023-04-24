@@ -25,7 +25,9 @@
               <b-dropdown-item> <icon-component type="dual-tone" icon-name="calendar" :size="20"></icon-component> Due date </b-dropdown-item>
               <b-dropdown-item> <icon-component type="dual-tone" icon-name="square-x" :size="20"></icon-component> None </b-dropdown-item>
             </b-dropdown>
+            <icon-component type="dual-tone" icon-name="location-arrow" :size="20"></icon-component>
             <b-dropdown id="dropdown-3" text="Share" class="dropdown" variant="link text-body p-0">
+              <icon-component type="dual-tone" icon-name="share" :size="20">Share</icon-component>
               <b-dropdown-item> <icon-component type="dual-tone" icon-name="document-plus" :size="20"></icon-component> Duplicate </b-dropdown-item>
               <b-dropdown-item> <icon-component type="dual-tone" icon-name="pencil" :size="20"></icon-component> Rename </b-dropdown-item>
               <b-dropdown-item> <icon-component type="dual-tone" icon-name="trash" :size="20"></icon-component> Delete </b-dropdown-item>

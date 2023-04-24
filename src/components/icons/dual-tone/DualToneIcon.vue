@@ -55,6 +55,7 @@ import DocumentIcon from './svg-icons/DocumentIcon'
 import DocumentMinusIcon from './svg-icons/DocumentMinusIcon'
 import DocumentPlusIcon from './svg-icons/DocumentPlusIcon'
 import DocumentXIcon from './svg-icons/DocumentXIcon'
+import DocumentCodeIcon from './svg-icons/DocumentCodeIcon.vue'
 import DotsCircleHorizontalIcon from './svg-icons/DotsCircleHorizontalIcon'
 import DotsSquareHorizontalIcon from './svg-icons/DotsSquareHorizontalIcon'
 import ExclamationCircleIcon from './svg-icons/ExclamationCircleIcon'
@@ -172,6 +173,7 @@ export default {
     DocumentArrowDownIcon,
     DocumentArrowUpIcon,
     DocumentIcon,
+    DocumentCodeIcon,
     DocumentMinusIcon,
     DocumentPlusIcon,
     DocumentXIcon,

@@ -32,7 +32,7 @@
                 <li><p>Priority email support</p></li>
                 <li><p>Help center access</p></li>
               </ul>
-              <b-button tag="button" variant="primary">Get started</b-button>
+              <b-button tag="button" variant="outline-primary">Get started</b-button>
             </b-card>
           </b-col>
           <b-col>
@@ -576,7 +576,7 @@
                 <li><p>Call and email support</p></li>
                 <li><p>Help center access</p></li>
               </ul>
-              <b-button pill variant="primary">Get Started</b-button>
+              <b-button pill variant="primary w-100">Get Started</b-button>
             </b-card>
           </b-col>
           <b-col class="iq-star-inserted-2">
@@ -594,7 +594,7 @@
                 <li><p>Priority email support</p></li>
                 <li><p>Help center access</p></li>
               </ul>
-              <b-button pill variant="primary">Get Started</b-button>
+              <b-button pill variant="primary w-100">Get Started</b-button>
             </b-card>
           </b-col>
           <b-col class="iq-star-inserted-3">
@@ -609,7 +609,7 @@
                 <li><p>24 X 7 call support</p></li>
                 <li><p>Help center access</p></li>
               </ul>
-              <b-button pill variant="primary">Get Started</b-button>
+              <b-button pill variant="primary w-100">Get Started</b-button>
             </b-card>
           </b-col>
         </b-row>

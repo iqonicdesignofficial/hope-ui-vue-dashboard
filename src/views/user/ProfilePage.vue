@@ -36,6 +36,7 @@
     </b-col>
     <b-col lg="3">
       <news-widget></news-widget>
+      <!-- <gallery-widget :list="gallery"></gallery-widget> -->
       <gallery-widget :list="gallery"></gallery-widget>
       <twitter-widget :list="feeds" />
     </b-col>

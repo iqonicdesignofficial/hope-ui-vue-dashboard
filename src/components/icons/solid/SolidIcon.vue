@@ -55,6 +55,7 @@ import DocumentIcon from './svg-icons/DocumentIcon'
 import DocumentMinusIcon from './svg-icons/DocumentMinusIcon'
 import DocumentPlusIcon from './svg-icons/DocumentPlusIcon'
 import DocumentXIcon from './svg-icons/DocumentXIcon'
+import DocumentCodeIcon from './svg-icons/DocumentCodeIcon'
 import DotsCircleHorizontalIcon from './svg-icons/DotsCircleHorizontalIcon'
 import DotsSquareHorizontalIcon from './svg-icons/DotsSquareHorizontalIcon'
 import ExclamationCircleIcon from './svg-icons/ExclamationCircleIcon'
@@ -68,6 +69,7 @@ import FilterIcon from './svg-icons/FilterIcon'
 import FolderIcon from './svg-icons/FolderIcon'
 import HeartIcon from './svg-icons/HeartIcon'
 import HomeIcon from './svg-icons/HomeIcon'
+import IIcon from './svg-icons/IIcon.vue'
 import KeySquareIcon from './svg-icons/KeySquareIcon'
 import LocationArrowIcon from './svg-icons/LocationArrowIcon'
 import LocationIcon from './svg-icons/LocationIcon'
@@ -103,6 +105,7 @@ import SwitchVerticalIcon from './svg-icons/SwitchVerticalIcon'
 import TicketIcon from './svg-icons/TicketIcon'
 import TimerIcon from './svg-icons/TimerIcon'
 import TrashIcon from './svg-icons/TrashIcon'
+import TableIcon from './svg-icons/TableIcon'
 import UserAddIcon from './svg-icons/UserAddIcon'
 import UserGroupIcon from './svg-icons/UserGroupIcon'
 import UserIcon from './svg-icons/UserIcon'
@@ -173,6 +176,7 @@ export default {
     DocumentMinusIcon,
     DocumentPlusIcon,
     DocumentXIcon,
+    DocumentCodeIcon,
     DotsCircleHorizontalIcon,
     DotsSquareHorizontalIcon,
     ExclamationCircleIcon,
@@ -188,6 +192,7 @@ export default {
     FolderIcon,
     HeartIcon,
     HomeIcon,
+    IIcon,
     KeySquareIcon,
     LocationArrowIcon,
     LocationIcon,
@@ -223,6 +228,7 @@ export default {
     StarIcon,
     StartIcon,
     SwitchVerticalIcon,
+    TableIcon,
     TicketIcon,
     TimerIcon,
     TrashIcon,

@@ -18,7 +18,7 @@ export default {
         if (sidebarResponsive !== null) {
           if (!sidebarResponsive.classList.contains('sidebar-mini')) {
             sidebarResponsive.classList.add('on-resize')
-            store.dispatch('setting/sidebar_type', [...sidebarType, 'sidebar-mini'])
+            store.dispatch('setting/sidebar_type', [...sidebarType.value, 'sidebar-mini'])
           }
         }
       } else {

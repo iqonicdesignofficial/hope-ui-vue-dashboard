@@ -1,5 +1,5 @@
 <template>
-  <aside :class="`sidebar sidebar-default ${sidebarColor} ${sidebarMenuStyle} ${sidebarType.join(' ')}`" id="first-tour" data-toggle="main-sidebar" data-sidebar="responsive">
+  <aside id="first-tour" :class="`sidebar sidebar-base ${sidebarColor} ${sidebarMenuStyle} ${sidebarType.join(' ')}`" data-toggle="main-sidebar" data-sidebar="responsive">
     <div class="sidebar-header d-flex align-items-center justify-content-start">
       <router-link :to="{ name: 'default.dashboard' }" class="navbar-brand">
         <brand-logo></brand-logo>

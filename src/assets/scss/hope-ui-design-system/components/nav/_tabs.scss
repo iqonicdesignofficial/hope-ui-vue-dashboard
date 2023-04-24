@@ -16,9 +16,9 @@
 
 .nav-tunnel {
   padding: $spacer * .25;
-  @include box-shadow($box-shadow-inset);
   background: $gray-200;
+  border: 1px solid var(--#{$variable-prefix}primary);
   .nav-link {
-    padding: $spacer * .25 1rem;
+      padding: $spacer * .25 1rem;
   }
 }
