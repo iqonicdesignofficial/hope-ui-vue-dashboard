@@ -117,7 +117,7 @@
       border-color: $color;
 
       &:checked {
-        background-color: $color;
+        background-color: $form-check-input-bg;
       }
 
       &:focus {

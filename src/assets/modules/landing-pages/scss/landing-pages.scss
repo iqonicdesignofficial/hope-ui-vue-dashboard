@@ -1,0 +1,28 @@
+// Configuration
+@import "../../../scss/bootstrap/functions";
+// Variables
+@import "../../../scss/hope-ui-design-system/variable";
+@import "../../../scss/hope-ui-design-system/variables/index";
+@import "../../../scss/bootstrap/variables";
+@import "../../../scss/bootstrap/mixins";
+
+
+@import "./components/root";
+
+//landing Pages
+@import "./components/widgets/banner";
+@import "./components/widgets/footer";
+@import "./components/widgets/services";
+
+
+@import "./components/widgets/testimonial";
+@import "./components/widgets/client";
+
+@import "./components/widgets/card";
+
+@import "./components/widgets/header";
+
+// @import "./components/slider/swiper";
+
+
+

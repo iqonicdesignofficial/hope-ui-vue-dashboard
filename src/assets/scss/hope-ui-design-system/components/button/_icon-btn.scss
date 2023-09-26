@@ -27,6 +27,23 @@
     z-index: $zindex-general + 100;
     top: 50%;
 }
+
+.btn-landing {
+    top: 50%;
+    right: -3.5rem !important;
+    border-bottom-right-radius: 0;
+    transform: rotate(270deg);
+    border-bottom-left-radius: 0rem;
+    border-top-right-radius: 0.25rem!important;
+}
+.btn-dashboard{
+    top: 68%;
+    right: -3.1rem !important;
+    border-bottom-right-radius: 0;
+    transform: rotate(270deg);
+    border-bottom-left-radius: 0rem;
+    border-top-right-radius: 0.25rem!important;
+}
 .btn-sm {
     .btn-inner{
         svg{

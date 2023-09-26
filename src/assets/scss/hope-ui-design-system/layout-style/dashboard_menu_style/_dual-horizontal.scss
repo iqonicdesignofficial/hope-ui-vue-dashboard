@@ -3,7 +3,7 @@
 	top: 0;
 	z-index: 889;
 	padding: 0;
-	background: $primary;
+	background: var(--#{$variable-prefix}primary);
 	.navbar-nav {
 		.nav-item {
 			&:not(:first-child) {
@@ -11,6 +11,12 @@
 			}
 			&:hover {
 				.nav-link {
+					background: $white;
+					color: $gray-600;
+				}
+			}
+			.nav-link {
+				&.active {
 					background: $white;
 					color: $gray-600;
 				}

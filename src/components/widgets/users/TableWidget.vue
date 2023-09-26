@@ -17,12 +17,12 @@
             <icon-component type="outlined" icon-name="user-add" />
           </span>
         </a>
-        <a class="btn btn-sm btn-icon btn-warning mx-1" data-bs-toggle="tooltip" data-bs-placement="top"  data-bs-original-title ="Edit" href="#">
+        <a class="btn btn-sm btn-icon btn-warning mx-1" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Edit" href="#">
           <span class="btn-inner">
             <icon-component type="outlined" icon-name="pencil-alt" />
           </span>
         </a>
-        <a class="btn btn-sm btn-icon btn-danger mx-1" data-bs-toggle="tooltip" data-bs-placement="top"  data-bs-original-title ="Delete" href="#">
+        <a class="btn btn-sm btn-icon btn-danger mx-1" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Delete" href="#">
           <span class="btn-inner">
             <icon-component type="outlined" icon-name="trash" />
           </span>

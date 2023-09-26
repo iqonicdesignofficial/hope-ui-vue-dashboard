@@ -1,0 +1,9 @@
+
+.contact-detail{
+    text-align: right;
+}
+@media screen and (max-width: 992px) {
+    .contact-detail{
+        text-align: center;
+    }
+}

@@ -1,5 +1,5 @@
 .nav{
-    background: $body-bg;
+    background: $card-bg;
     .navbar-brand {
 		.logo-title {
 			color: $white;
@@ -15,6 +15,9 @@
                 color: $white;
                 &:hover {
                     color: tint-color($body-color, 40%);
+                }
+                &.active{
+                    color: var(--#{$variable-prefix}primary);
                 }
             }
         }

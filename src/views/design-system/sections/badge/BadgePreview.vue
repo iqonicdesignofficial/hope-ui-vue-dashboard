@@ -17,6 +17,6 @@
     <b-badge variant="info mx-1" pill>Info</b-badge>
     <b-badge variant="light mx-1" pill>Light</b-badge>
     <b-badge variant="dark " pill>Dark</b-badge>
-    <b-badge variant="gray " pill>Dark</b-badge>
+    <b-badge variant="gray " pill>Gray</b-badge>
   </div>
 </template>

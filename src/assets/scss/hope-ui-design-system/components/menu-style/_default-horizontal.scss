@@ -24,6 +24,7 @@ body.offcanvas-active{
 }
 
 /* ============ mobile view ============ */
+
 @include media-breakpoint-down(xl) {
 	.iq-navbar {
 		.navbar-brand {
@@ -85,3 +86,4 @@ body.offcanvas-active{
 	
 	}
 }
+

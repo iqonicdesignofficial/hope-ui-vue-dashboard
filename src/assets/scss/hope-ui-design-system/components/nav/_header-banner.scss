@@ -43,13 +43,17 @@
     padding-bottom: 0;
 }
 
-@include media-breakpoint-down(md) {
-    .iq-navbar-header{
-        .iq-header-img{
-            height: 310px !important;
+
+.iq-banner{
+    &.navs-bg-color{
+        .iq-navbar-header{
+            .iq-header-img{
+                background-image: var(--bs-primary);
+            }
         }
     }
 }
+
 @include media-breakpoint-up(xl) {
     .iq-banner{
         &.default, &.navs-bg-color{
@@ -79,13 +83,20 @@
             }
         }
     }
+
 }
-.iq-banner{
-    &.navs-bg-color{
-        .iq-navbar-header{
-            .iq-header-img{
-                background-image: var(--bs-primary);
-            }
-        }
+@include media-breakpoint-down(lg) {
+
+    .iq-banner:not(.hide)+.content-inner {
+        margin-top: 1em !important;
     }
+
 }
+@include media-breakpoint-down(md) {
+    .iq-banner:not(.hide)+.content-inner {
+        margin-top: 4em !important;
+    }
+
+}
+
+

@@ -10,20 +10,18 @@
                     color: $white;
                 }
             }
-            .dark-wizard{
-                color: white;
-            }
+
         }
         &.active {
             a {
-                background: $primary;
+                background: var(--#{$variable-prefix}primary);
                 color: $white;  
 
                 .iq-icon {
                     background: $white;
                     .svg-icon
                     {
-                        color: $primary;
+                        color: var(--#{$variable-prefix}primary);
                     } 
                 }
             }

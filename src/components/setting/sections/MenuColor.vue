@@ -1,7 +1,7 @@
 <template>
   <h6 class="mt-4 mb-3">Sidebar Color</h6>
   <div class="d-grid gap-3 grid-cols-2 mb-4">
-     <radio-input btn-name="sidebar_color" labelClass="d-block  gap-1" id="sidebar-white" :default-checked="sidebarcolor" value="sidebar-white" @onChange="updateRadio">
+    <radio-input btn-name="sidebar_color" labelClass="d-block  gap-1" id="sidebar-white" :default-checked="sidebarcolor" value="sidebar-white" @onChange="updateRadio">
       <span class="text-center">Default </span>
     </radio-input>
     <radio-input btn-name="sidebar_color" labelClass="d-block gap-1" id="sidebar-dark" :default-checked="sidebarcolor" value="sidebar-dark" @onChange="updateRadio">

@@ -122,6 +122,7 @@
 
   .form-check-input {
     width: $form-switch-width;
+    padding: 8px;
     margin-left: $form-switch-padding-start * -1;
     background-image: escape-svg($form-switch-bg-image);
     background-position: left center;

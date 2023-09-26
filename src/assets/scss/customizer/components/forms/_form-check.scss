@@ -2,9 +2,11 @@
     border-color: var(--#{$variable-prefix}primary-shade-20);
     &:checked{
         border-color: var(--#{$variable-prefix}primary-shade-20);
+        background-color: var(--#{$variable-prefix}primary) !important;
     }
     &:focus{
-        border-color: var(--#{$variable-prefix}primary-shade-20);
+        border-color: var(--#{$variable-prefix}primary-shade-20) !important;
+        background-color: var(--#{$variable-prefix}primary) !important;
     }
 }
 
@@ -13,4 +15,3 @@
 .border-primary{
     border-color: var(--#{$variable-prefix}primary) !important;
 }
-

@@ -8,6 +8,7 @@
     <b-spinner variant="info"></b-spinner>
     <b-spinner variant="light"></b-spinner>
     <b-spinner variant="dark"></b-spinner>
+    <b-spinner variant="gray"></b-spinner>
   </div>
   <div class="bd-example">
     <b-spinner type="grow" variant="primary"></b-spinner>
@@ -18,6 +19,7 @@
     <b-spinner type="grow" variant="info"></b-spinner>
     <b-spinner type="grow" variant="light"></b-spinner>
     <b-spinner type="grow" variant="dark"></b-spinner>
+    <b-spinner type="grow" variant="gray"></b-spinner>
   </div>
   <div class="bd-example">
     <b-button variant="primary" disabled>

@@ -108,7 +108,7 @@
     }
 }
 .iq-navbar {
-    z-index: $zindex-general - 10;
+    z-index: $zindex-general - 11;
     &.nav-glass{
         background:linear-gradient(120deg, rgba($white, 0.5) -8%, rgba($white, 0.01) 120%);
         backdrop-filter: blur(10px);

@@ -14,14 +14,12 @@
         </h1>
         <h4 class="text-white mb-5">Production ready FREE Open Source <b>Dashboard UI Kit</b> and <b>Design System</b>.</h4>
         <div class="d-flex justify-content-center align-items-center">
-          <div>
-            <router-link :to="{ name: 'default.dashboard' }" target="_blank" class="btn btn-light bg-white">
-              <svg width="22" height="22" class="me-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-              </svg>
-              Dashboard Demo</router-link
-            >
-          </div>
+          <router-link :to="{ name: 'default.dashboard' }" target="_blank" class="btn btn-light bg-white">
+            <svg width="22" height="22" class="me-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+            </svg>
+            Dashboard Demo</router-link
+          >
           <div class="ms-3">
             <a class="bg-white btn btn-light d-flex" target="_blank" href="https://github.com/iqonicdesignofficial/hope-ui-vue-dashboard"><img class="avatar-23" src="@/assets/images/brands/23.png" style="width: 24px; height: 24px" /><span class="mx-2 text-danger fw-bold">STAR US</span> <span>ON GITHUB</span></a>
           </div>
@@ -35,7 +33,7 @@
             <svg width="30" class="text-primary" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect x="-0.757324" y="19.2427" width="28" height="4" rx="2" transform="rotate(-45 -0.757324 19.2427)" fill="currentColor"></rect>
               <rect x="7.72803" y="27.728" width="28" height="4" rx="2" transform="rotate(-45 7.72803 27.728)" fill="currentColor"></rect>
-              <rect x="10.5366" y="16.3945" width="16" height="4" rx="2" transform="rotate(45 10.5366 16.3945)" fill="currentColor"></rect>
+              <rect x="10.5366" y="16.3945" width="16" hebtn btn-light btn-mdight="4" rx="2" transform="rotate(45 10.5366 16.3945)" fill="currentColor"></rect>
               <rect x="10.5562" y="-0.556152" width="28" height="4" rx="2" transform="rotate(45 10.5562 -0.556152)" fill="currentColor"></rect>
             </svg>
             <h5 class="logo-title">{{ appName }}</h5>
@@ -50,6 +48,9 @@
               </li>
               <li class="nav-item me-3">
                 <a class="nav-link" aria-current="page" href="https://templates.iqonic.design/hope-ui/documentation/vue/dist/Changelog" target="_blank">Change Log</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="btn btn-secondary d-flex align-items-center gap-2" aria-current="page" href="./landing-page" target="_blank"> Landing Pages </a>
               </li>
               <li class="nav-item me-3">
                 <a class="btn btn-primary d-flex align-items-center gap-2" aria-current="page" href="https://hopeui.iqonic.design/pro/vue/" target="_blank">

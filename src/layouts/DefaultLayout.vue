@@ -29,6 +29,7 @@
   <!-- Live Customizer Component Start Here -->
   <setting-offcanvas></setting-offcanvas>
   <!-- Live Customizer Component End Here-->
+  <a class="btn btn-fixed-end btn-secondary btn-icon btn-dashboard" href="./landing-page"> Landing Pages </a>
 </template>
 
 <script setup>

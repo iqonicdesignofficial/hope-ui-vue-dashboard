@@ -11,6 +11,8 @@
     }
     &.active {
         border-color: $primary;
+        color: $white;
+        background-color: $primary;
     }
 }
 

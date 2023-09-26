@@ -18,4 +18,12 @@
     @include custom-color-variables('primary',$primary);
     @include custom-color-variables('info',$info);
 
+    @each $color, $value in $custom-colors {
+        .#{$color} {
+            @each $name, $hax-value in $value {
+                @include custom-color-variables($name, $hax-value);
+            }
+        }
+    }
+
 }

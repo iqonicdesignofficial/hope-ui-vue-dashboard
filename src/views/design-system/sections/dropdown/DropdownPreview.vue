@@ -33,7 +33,7 @@
       <b-dropdown-item href="#">Another action</b-dropdown-item>
       <b-dropdown-item href="#">Something else here...</b-dropdown-item>
     </b-dropdown>
-    <b-dropdown split split-variant="gray" variant="gray" text="Secondary" class="me-1">
+    <b-dropdown split split-variant="secondary" variant="secondary" text="Secondary" class="me-1">
       <b-dropdown-item href="#">Action</b-dropdown-item>
       <b-dropdown-item href="#">Another action</b-dropdown-item>
       <b-dropdown-item href="#">Something else here...</b-dropdown-item>
@@ -54,6 +54,11 @@
       <b-dropdown-item href="#">Something else here...</b-dropdown-item>
     </b-dropdown>
     <b-dropdown split split-variant="danger" variant="danger" text="Danger" class="me-1 mt-2">
+      <b-dropdown-item href="#">Action</b-dropdown-item>
+      <b-dropdown-item href="#">Another action</b-dropdown-item>
+      <b-dropdown-item href="#">Something else here...</b-dropdown-item>
+    </b-dropdown>
+    <b-dropdown split split-variant="gray" variant="gray" text="Gray" class="me-1 mt-2">
       <b-dropdown-item href="#">Action</b-dropdown-item>
       <b-dropdown-item href="#">Another action</b-dropdown-item>
       <b-dropdown-item href="#">Something else here...</b-dropdown-item>
